@@ -1,0 +1,262 @@
+# Translation of Plugins - Sticky Header Effects for Elementor - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - Sticky Header Effects for Elementor - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-09-20 06:08:04+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - Sticky Header Effects for Elementor - Stable (latest release)\n"
+
+#: modules/transparent/module.php:583
+msgid "Choose the scroll distance to start hiding the header"
+msgstr "Elige la distancia de scroll para comenzar a ocultar la cabecera"
+
+#: modules/transparent/module.php:560
+msgid "Hides the header if scrolling down, and shows header if scrolling up"
+msgstr "Oculta la cabecera si se hace scroll hacia abajo y la muestra si se hace scroll hacia arriba"
+
+#: modules/transparent/module.php:552
+msgid "Hide header on scroll down"
+msgstr "Ocultar la cabecera al hacer scroll hacia abajo"
+
+#: modules/transparent/module.php:545
+msgid "Add a modern blur effect to a semi-transparent header background color after scrolling"
+msgstr "Añade un moderno efecto de desenfoque a un color de fondo semitransparente de la cabecera después de hacer scroll"
+
+#: modules/transparent/module.php:534
+msgid "Blur Background"
+msgstr "Desenfoque del fondo"
+
+#: modules/transparent/module.php:515
+msgid "Removes all filters to allow a full color logo image"
+msgstr "Elimina todos los filtros para permitir una imagen del logotipo a todo color"
+
+#: modules/transparent/module.php:508
+msgid "Full Color Logo"
+msgstr "Logotipo a todo color"
+
+#: modules/transparent/module.php:445
+msgid "After Scrolling"
+msgstr "Después del scroll"
+
+#: modules/transparent/module.php:425 modules/transparent/module.php:490
+msgid "Change the logo to black"
+msgstr "Cambiar el logotipo a negro"
+
+#: modules/transparent/module.php:418 modules/transparent/module.php:483
+msgid "Black Logo"
+msgstr "Logotipo negro"
+
+#: modules/transparent/module.php:400 modules/transparent/module.php:465
+msgid "Change the logo to white"
+msgstr "Cambiar el logotipo a blanco"
+
+#: modules/transparent/module.php:393 modules/transparent/module.php:458
+msgid "White Logo"
+msgstr "Logotipo blanco"
+
+#: modules/transparent/module.php:380
+msgid "Before scrolling"
+msgstr "Antes del scroll"
+
+#: modules/transparent/module.php:359
+msgid "Note: These settings will override the CSS filters set under the logo style tab and might only work on the frontend"
+msgstr "Nota: estos ajustes anularán los filtros CSS establecidos en la pestaña de estilo del logotipo y es posible que solo funcione en la vista pública"
+
+#: modules/transparent/module.php:347
+msgid "Change the logo image color before or after the user reaches the scroll distance set above"
+msgstr "Cambia el color de la imagen del logotipo antes o después de que el usuario alcance la distancia de scroll establecida anteriormente."
+
+#: modules/transparent/module.php:339
+msgid "Change Logo Color"
+msgstr "Cambiar el color del logotipo"
+
+#: modules/transparent/module.php:314
+msgid "Logo Height(%)"
+msgstr "Altura del logotipo (%)"
+
+#: modules/transparent/module.php:296
+msgid "Shrink Logo"
+msgstr "Reducción del logotipo"
+
+#: modules/transparent/module.php:284
+msgid "Remember: The header cannot shrink smaller than the elements inside of it"
+msgstr "Recuerda: la cabecera no puede reducirse a un tamaño más pequeño que los elementos que contiene"
+
+#: modules/transparent/module.php:272
+msgid "Header Height (px)"
+msgstr "Altura de la cabecera (px)"
+
+#: modules/transparent/module.php:254
+msgid "Shrink Header"
+msgstr "Reducción de la cabecera"
+
+#: modules/transparent/module.php:231
+msgid "Bottom Border Thickness (px)"
+msgstr "Grosor del borde inferior (px)"
+
+#: modules/transparent/module.php:177
+msgid "Choose what color to change the background to after scrolling"
+msgstr "Elige a qué color cambiar el fondo después de hacer scroll"
+
+#: modules/transparent/module.php:166
+msgid "Background Color"
+msgstr "Color del fondo"
+
+#: modules/transparent/module.php:153
+msgid "<br>\"Scroll Distance\" settings and Elementor \"Motion Effects > Offset\" settings should be set to the height of any section above the header.<br>Example: Above header section min-height = 60px. Set both scroll distance and motion effects offset to 60px"
+msgstr "<br>Los ajustes de «Distancia de scroll» y de «Efectos de movimiento > Desplazamiento» de Elementor deben establecerse con la altura de cualquier sección sobre la cabecera.<br>Ejemplo: sección encima de la cabecera con «min-height = 60px». Establece tanto la distancia de scroll como el desplazamiento de los efectos de movimiento en 60px"
+
+#: modules/transparent/module.php:152
+msgid "Above Header Sections"
+msgstr "Secciones encima de la cabecera"
+
+#: modules/transparent/module.php:139
+msgid "IMPORTANT: This will make the header overlap the main page so extra spacing at the top of sections may be necesary. **May only work on frontend"
+msgstr "IMPORTANTE: Esto hará que la cabecera se superponga a la página principal, por lo que puede ser necesario un espaciado adicional en la parte superior de las secciones. **Puede que funcione solo en la vista pública"
+
+#: modules/transparent/module.php:132
+msgid "Sets the header position to \"absolute\" so negative margins are not needed"
+msgstr "Establece la posición de la cabecera en «absoluta», por lo que no se necesitan márgenes negativos"
+
+#: modules/transparent/module.php:77
+msgid "This will completely enable/disable ALL settings for each option except for sticky settings. Sticky settings can be found under the motion effects tab above"
+msgstr "Esto activará o desactivará completamente TODOS los ajustes para cada opción, excepto los ajustes de fijación. Los ajustes de fijación se pueden encontrar en la pestaña de «Efectos de movimiento» anterior"
+
+#: modules/transparent/module.php:50
+msgid "IMPORTANT: This plugin does NOT control the sticky position of the header. Please use the above Motion Effects tab sticky options to make the header sticky"
+msgstr "IMPORTANTE: este plugin NO controla la posición fija de la cabecera. Por favor, usa las opciones de fijación de la pestaña «Efectos de movimiento» anterior para que la cabecera sea fija"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://stickyheadereffects.com"
+msgstr "https://stickyheadereffects.com"
+
+#: modules/transparent/module.php:304
+msgid "Choose logo height after scrolling"
+msgstr "Elige la altura del logotipo después de hacer scroll"
+
+#. Author of the plugin
+msgid "Rwattner"
+msgstr "Rwattner"
+
+#. Description of the plugin
+msgid "Options and features that extend Elementor Pro's sticky header capabilities."
+msgstr "Opciones y características que amplían las capacidades de Elementor Pro para las cabeceras fijas"
+
+#. Plugin Name of the plugin
+msgid "Sticky Header Effects for Elementor"
+msgstr "Sticky Header Effects for Elementor"
+
+#: sticky-header-effects-for-elementor.php:123
+msgid "A new version of Elementor is available. For better performance and compatibility of Sticky Header Effects, we recommend updating to the latest version."
+msgstr "Hay disponible una nueva versión de Elementor. Para un mejor rendimiento y compatibilidad con Sticky Header Effects, recomendamos actualizar a la última versión."
+
+#: sticky-header-effects-for-elementor.php:110
+#: sticky-header-effects-for-elementor.php:124
+msgid "Update Elementor Now"
+msgstr "Actualizar Elementor ahora"
+
+#: sticky-header-effects-for-elementor.php:109
+msgid "Sticky Header Effects not working because you are using an old version of Elementor."
+msgstr "Sticky Header Effects no está funcionando porque estás utilizando una versión antigua de Elementor."
+
+#: sticky-header-effects-for-elementor.php:95
+msgid "Install Elementor Now"
+msgstr "Instalar Elementor ahora"
+
+#: sticky-header-effects-for-elementor.php:94
+msgid "Sticky Header Effects is not working because you need to install the Elementor plugin"
+msgstr "Sticky Header Effects no está funcionando porque tienes que instalar el plugin Elementor"
+
+#: sticky-header-effects-for-elementor.php:86
+msgid "Activate Elementor Now"
+msgstr "Activar Elementor ahora"
+
+#: sticky-header-effects-for-elementor.php:85
+msgid "Sticky Header Effects not working because you need to activate the Elementor plugin."
+msgstr "Sticky Header Effects no está funcionando porque tienes que activar el plugin Elementor."
+
+#: modules/transparent/module.php:262
+msgid "Choose header height after scrolling"
+msgstr "Elige altura para la cabecera después de hacer scroll"
+
+#: modules/transparent/module.php:209
+msgid "Choose bottom border size and color"
+msgstr "Elige tamaño y color para el borde inferior"
+
+#: modules/transparent/module.php:198
+msgid "Bottom Border"
+msgstr "Borde inferior"
+
+#: modules/transparent/module.php:184 modules/transparent/module.php:217
+msgid "Color"
+msgstr "Color"
+
+#: modules/transparent/module.php:121
+msgid "Transparent Header"
+msgstr "Cabecera transparente"
+
+#: modules/transparent/module.php:109
+msgid "Remember: The settings below will not be applied until the page is scrolled the distance set above"
+msgstr "Recuerda: los siguientes ajustes no se aplicarán hasta que la página se desplace a la distancia establecida arriba"
+
+#: modules/transparent/module.php:98
+msgid "Choose the scroll distance to enable Sticky Header Effects"
+msgstr "Elige la distancia de scroll para activar los efectos de la cabecera fija"
+
+#: modules/transparent/module.php:86 modules/transparent/module.php:571
+msgid "Scroll Distance (px)"
+msgstr "Distancia de scroll (px)"
+
+#: modules/transparent/module.php:71
+msgid "Mobile"
+msgstr "Móvil"
+
+#: modules/transparent/module.php:70
+msgid "Tablet"
+msgstr "Tableta"
+
+#: modules/transparent/module.php:69
+msgid "Desktop"
+msgstr "Sobremesa"
+
+#: modules/transparent/module.php:63
+msgid "Enable On"
+msgstr "Activar en"
+
+#: modules/transparent/module.php:39 modules/transparent/module.php:125
+#: modules/transparent/module.php:170 modules/transparent/module.php:202
+#: modules/transparent/module.php:258 modules/transparent/module.php:300
+#: modules/transparent/module.php:343 modules/transparent/module.php:396
+#: modules/transparent/module.php:421 modules/transparent/module.php:461
+#: modules/transparent/module.php:486 modules/transparent/module.php:511
+#: modules/transparent/module.php:538 modules/transparent/module.php:556
+msgid "Off"
+msgstr "Desactivado"
+
+#: modules/transparent/module.php:38 modules/transparent/module.php:124
+#: modules/transparent/module.php:169 modules/transparent/module.php:201
+#: modules/transparent/module.php:257 modules/transparent/module.php:299
+#: modules/transparent/module.php:342 modules/transparent/module.php:395
+#: modules/transparent/module.php:420 modules/transparent/module.php:460
+#: modules/transparent/module.php:485 modules/transparent/module.php:510
+#: modules/transparent/module.php:537 modules/transparent/module.php:555
+msgid "On"
+msgstr "Activado"
+
+#: modules/transparent/module.php:36
+msgid "Enable"
+msgstr "Activar"
+
+#: modules/transparent/module.php:28 plugin.php:133
+msgid "Sticky Header Effects"
+msgstr "Sticky Header Effects"
+
+#: base/module-base.php:33 base/module-base.php:44 plugin.php:44 plugin.php:55
+msgid "Cheatin&#8217; huh?"
+msgstr "Haciendo trampas, ¿eh?"

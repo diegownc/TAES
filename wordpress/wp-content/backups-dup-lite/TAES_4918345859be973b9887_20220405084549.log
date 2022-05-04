@@ -1,0 +1,87 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 5 de April de 2022 08:46
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.4.4
+WORDPRESS:	5.9.2
+PHP INFO:	8.1.4 | SAPI: apache2handler
+SERVER:		Apache/2.4.53 (Win64) OpenSSL/1.1.1n PHP/8.1.4 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (512M default) 
+MEMORY STACK: 70MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: TAES_4918345859be973b9887_20220405084549_database.sql
+SQL FILE SIZE: 13.76MB (14432549)
+SQL FILE TIME: 2022-04-05 08:47:09
+SQL RUNTIME: 46.09 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/xampp/htdocs/taes/wordpress
+ARCHIVE FILE: TAES_4918345859be973b9887_20220405084549_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	164.34MB
+STATS:	Dirs 1,571 | Files 7,283
+SQL ADDED: TAES_4918345859be973b9887_20220405084549_database.sql
+ZipArchive Object
+(
+    [lastId] => 8853
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 8854
+    [filename] => C:\xampp\htdocs\taes\wordpress\wp-content\backups-dup-lite\tmp\TAES_4918345859be973b9887_20220405084549_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 8853
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 66.55MB
+ARCHIVE RUNTIME: 59.07 sec.
+MEMORY STACK: 72MB
+building installer
+[PHP ERR][ISSUE] MSG:Implicit conversion from float 48.8 to int loses precision [CODE:8192|FILE:C:\xampp\htdocs\taes\wordpress\wp-content\plugins\duplicator\classes\class.password.php|LINE:166]
+do_action('wp_ajax_duplicator_package_build'), WP_Hook->do_action, WP_Hook->apply_filters, duplicator_package_build, DUP_Package->runZipBuild, DUP_Installer->build, DUP_Installer->create_enhanced_installer_files, DUP_Installer->create_archive_config_file, DUP_PasswordHash->HashPassword, DUP_PasswordHash->gensalt_blowfish, chr, DUP_Handler::error, DUP_Handler::getMessage
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip C:/xampp/htdocs/taes/wordpress/wp-content/backups-dup-lite/tmp/TAES_4918345859be973b9887_20220405084549_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 13.76MB
+INSTALLER FILE: 64.58KB
+ARCHIVE FILE: 67.6MB 
+RECUENTO ARCHIVOS/DIRECTORIOS ESPERADOS: 8,854
+RECUENTO ARCHIVOS/DIRECTORIOS ACTUALES: 8,853
+PRUEBA DE CONSISTENCIA DEL ARCHIVO: Superado
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 106.08 sec.
+PEAK PHP MEMORY USED: 76MB
+DONE PROCESSING => TAES 5 de April de 2022 08:48
+

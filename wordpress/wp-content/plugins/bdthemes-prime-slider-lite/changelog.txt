@@ -1,0 +1,564 @@
+## 2.8.1 [24th March 2022]
+
+### Fixed
+
+- Deprecated Controls issue Fixed
+
+## 2.8.0 [23th March 2022]
+
+### Added
+
+- Pieces Widget Added
+- Arrows padding, margin option added in Isolate Widget
+- Pagination typography option added in Flexure Widget
+- Background Image Custom Size Option added in Astoria, Blog, Dragon, Event Calendar, Flexure, Flogia, Fluent, General, Mount, Pagepiling, Paranoia, Reveal, Storker, Woocommerce, Woostand, Wooexpand Widgets
+
+## 2.7.1 [8th March 2022]
+
+### Fixed
+
+- Woocircle Widget not showing issue fixed
+
+## 2.7.0 [7th March 2022]
+
+### Added
+
+- Woocircle Widget Added
+
+### Fixed
+
+- Deprecated issue fixed in Blog, General, Isolate Slider Widgets (Thanks to BeautyMed Co)
+
+## 2.6.2 [20th February 2022]
+
+### Added
+
+- Active Item option added in Wooexpand Widget
+
+## 2.6.1 [16th February 2022]
+
+### Added
+
+- Overlay option added in Reveal Widget
+
+### Fixed
+
+- Responsive issue fixed in Reveal Widget
+
+## 2.6.0 [15th February 2022]
+
+### Added
+
+- Reveal Widget Added
+- Dots Spacing option added in General Slider
+
+## 2.5.1 [3rd February 2022]
+
+### Fixed
+
+- Column issue fixed in Fiestar Widget
+
+## 2.5.0 [17th January 2022]
+
+### Added
+
+- Paranoia Widget Added
+- Background Settings option added in Storker Widget (Thanks to Harris)
+
+## 2.4.0 [23th December 2021]
+
+### Added
+
+- Pacific Widget Added
+
+## 2.3.2 [19th December 2021]
+
+### Added
+
+- Sub Title HTML Tag option added in Dragon Slider Widget
+
+### Fixed
+
+- Improved Asset Loading issue fixed in all Carousel and Slider Widgets
+
+## 2.3.1 [12th December 2021]
+
+### Fixed
+
+- Video fullscreen issue fixed in General Widget (Thanks to Branka Parancin)
+
+## 2.3.0 [1st December 2021]
+
+### Added
+
+- Rubix Widget Added
+- Avatar Size, Avatar spacing, Social Media Column Width, Show Avatar, date format, content spacing option added in Fluent Widget
+
+## 2.2.0 [21th November 2021]
+
+### Added
+
+- Astoria Widget Added
+- Crossroad Widget Added
+- New query system added in WooCommerce (WooCommerce, WooExpand, WooLamp and WooStand) widget
+
+### Fixed
+
+- Minor issue fixed in General Slider (Thanks to Jay)
+
+## 2.1.1 [2nd November 2021]
+
+### Added
+
+- Advanced Animation option added in Blog and Isolate Widgets
+- Content Max Width option added in Flogia Widget
+- Content Margin option added in Dragon Widgets
+
+### Updated
+
+- Prime Slider Dashboard Updated
+
+## 2.1.0 [17th October 2021]
+
+### Added
+
+- Vertex Widget Added
+
+## 2.0.2 [11th October 2021]
+
+### Added
+
+- Thumbs show hide option added in Knily Widget
+
+### Fixed
+
+- Design issue Fixed in Knily and marble Widgets
+
+## 2.0.1 [6th October 2021]
+
+### Fixed
+
+- Script minor issue Fixed
+
+## 2.0.0 [6th October 2021]
+
+### Added
+
+- Knily Widget Added
+- Marble Widget Added
+- Fiestar Widget Added
+- Mercury Widget Added
+- Search Widget option Added in Prime Slider Dashboard
+- New Query Controls system added in all post type widget
+
+## 1.14.3 [6th September 2021]
+
+### Added
+
+- Storker Widget Added
+- Excerpt Top spacing option added in Crelly skin General Widget
+- Otherview Text show/hide option added in Crelly skin General Widget
+
+## 1.14.2 [12th July 2021]
+
+### Added
+
+- Lightbox show/hide option added in Monster Widget
+- Published By show/hide option added in Flogia Widget
+
+### Fixed
+
+- Editor mode height issue fixed in Custom Slider Widget
+
+## 1.14.1 [12th June 2021]
+
+### Added
+
+- Alter Button and Excerpt option added in General Widget
+- Parallax Animation show/hide option added in General Widget
+- Scrollspy Delay option added in Wooexpand Widget
+- Author, Date, Comments show/hide option added in Blog Widget
+
+### Fixed
+
+- Control not showing issue fixed in General widget
+
+## 1.14.0 [3rd June 2021]
+
+### Added
+
+- Wooexpand Widget added
+
+### Fixed
+
+- Description color issue fixed in Flexure Widget
+
+## 1.13.1 [20th May 2021]
+
+### Added
+
+- Single product title link added in WooCommerce, Woostand, Woolamp Widget
+
+### Fixed
+
+- Navigation number color not showing and space between issue fixed in General skin Crelly Widget (Thanks Stanly Stanly)
+
+## 1.13.0 [15th April 2021]
+
+### Added
+
+- Woolamp Slider Widget Added
+
+## 1.12.11 [3rd April 2021]
+
+### Fixed
+
+- Security issue fixed for some special cases
+- Video loading issue fixed in Custom Slider Widget
+
+## 1.12.10 [24th March 2021]
+
+### Fixed
+
+- Animation Status error issue fixed in General Widget
+- All widgets title tag size security issue fixed
+
+## 1.12.9 [11th March 2021]
+
+### Added
+
+- Glassmorphism option added in Woostand and Blog skin Zinest, Folio Widget for some special cases
+- Background option added in Woostand and Blog skin Folio Widget
+- First Word Color option added in Dragon Base, Blog Base Widget
+- Blur Effect show hide option added in Dragon Widget
+- Content Padding option added in Woocommerce Widget
+
+### Fixed
+
+- First Reload thumbnav all active issue fixed in Flogia Widget
+- Category background overflow show issue fixed in WooCommerce Widget
+- Text Color issue fixed in Blog Widget
+- Section height issue fixed in Custom Widget
+- Center Alignment issue fixed in Multiscroll Widget
+
+## 1.12.8 [20th February 2021]
+
+### Added
+
+- Image Size option added in Blog, General, Flogia, Fluent, WooCommerce, WooStand Widgets
+- All widgets on/off control added by filter hook for developers. more control hooks are coming soon :)
+
+### Fixed
+
+- Kenburns Animation issue fixed in Blog skin Coral, Folio, Zinest Widget(Thanks Dave Riches)
+
+## 1.12.7 [16th February 2021]
+
+### Added
+
+- Image/Background position, size, repeat, attachment options added in Blog base and skin coral, folio, zinest, Dragon, Event Calendar, Flexure, Flogia, Fluent, Mount, WooStand, Woocommerce, General base and skin Crelly, meteor, slide, Pagepiling Base Widgets
+- Text/Excerpt option added in Flogia Widget
+
+### Removed
+
+- Show Image option removed in Event Calendar Widget
+
+## 1.12.6 [14th February 2021]
+
+### Added
+
+- Missing Features and controls added in Blog Base and skin Coral, Zinest, Folio Widget
+
+### Fixed
+
+- Header z-index issue fixed in General, Isolate, Blog Widget (Thanks Charisar)
+
+### Updated
+
+- Design Updated in Blog Base and skin Coral, Zinest, Folio Widget
+
+## 1.12.5 [8th February 2021]
+
+### Fixed
+
+- Minor error issue fixed in General Widget (Thanks Stewardjohn)
+
+## 1.12.4 [1st February 2021]
+
+### Added
+
+- Repeater item Custom style option added in Multiscroll Widget
+- Text Stroke control option added General base with all skin, Multiscroll, Blog Base with all skin, Dragon, Flogia, Isolate base with all skin, Mount, Pagepiling, Sequester, Fluent, Event Calendar, WooCommerce, Woostand Widgets
+- Text/Excerpt option added in Blog base and skin Zinest, Fluent Widgets
+- Icon control, Image match height on/off option added in Sequester Widget
+
+### Fixed
+
+- Item match height issue fixed in Custom Slider Widget
+- Featured Post style issue fixed in Flogia Widget
+
+## 1.12.3 [17th January 2021]
+
+### Added
+
+- Advanced Animation option added in General Widget all skin (Pro Version Only)
+- Isolate skin slice Image size & title Left spacing option added
+- Title Text Shadow option added in Multiscroll Widget
+- Some style control option added and updated Multiscroll, Pagepiling, Blog Widgets
+- Navigation Arrows Icon and some control options added in Flexure widget
+
+### Fixed
+
+- Image match height issue fixed in Isolate widget
+- Some minor issue fixed Skin Coral Blog Widget
+- Social icon hover background issue fixed in skin Coral Blog Widget
+- Scroll down icon not showing issue fixed in isolate widget (Thanks Lorraine Mills)
+- Content max width issue fixed in Multiscroll Widget
+
+## 1.12.2 [4th January 2021]
+
+### Added
+
+- Advanced Animation option added in General Widget (Pro Version Only)
+- Content Position option added in WooStand Widget
+
+### Updated
+
+- Blog Slider animation updated
+- WooStand Slider animation updated
+- Flogia Slider animation updated
+- Fluent Slider animation updated
+
+## 1.12.1 [31th December 2020]
+
+### Added
+
+- Some style control option added and updated General, Isolate, WooCommerce Widgets
+- Flexure Widget navigation arrows option added
+
+### Fixed
+
+- Fixed image Cropping issue in Isolate Widgets
+- Button link issue fixed in Isolate skin slice Widget (Thanks Gal Levi)
+
+## 1.12.0 [19th December 2020]
+
+### Added
+
+- Flexure Widget Added
+- Mount Widget Added
+- Monster Widget Added
+
+### Fixed
+
+- Some minor issue fixed in all Widgets
+
+## 1.11.0 [29th October 2020]
+
+### Added
+
+- Sequester Widget Added
+
+### Fixed
+
+- Content not showing issue fixed
+
+## 1.10.2 [11th October 2020]
+
+### Fixed
+
+- Ratio issue fixed in Blog skin Coral, Folio, Zinest Widget (Thanks Vinceszy)
+- Title Link color issue fixed in Isolate Widget (Thanks Zydar Cheong)
+- Offcanvas style issue fixed in General Crelly Widget (Thanks jho jho)
+
+## 1.10.1 [18th September 2020]
+
+### Added
+
+- Column Position option added in Isolate Widget
+
+### Fixed
+
+- Button Link issue fixed in Multiscroll Widget (Thanks Crapette357)
+
+## 1.10.0 [13th September 2020]
+
+### Added
+
+- Pagepiling Widget Added
+- Isolate Widget Skin locate, slice unlock from pro
+- Woocommerce widget overlay issue fixed
+- Custom slider navigation arrows text change and style 4 option added
+- Button Position option added in Multiscroll widget
+
+### Fixed
+
+- Scrolling issue fixed in Fluent Widget
+- Category helper cached issue fixed
+
+## 1.9.0 [29th July 2020]
+
+### Added
+
+- Blog Widget Skin Coral, Folio, Zinest unlock from pro
+
+### Fixed
+
+- rtl issue fixed in dashboard
+
+
+## 1.8.0 [22th July 2020]
+
+### Added
+
+- General Widget Skin Slide, Meteor, Crelly unlock from pro
+- Left & Right background image option added in Multiscroll Widget
+
+### Fixed
+
+- Title, Button Link issue fixed in General Widget
+
+## 1.7.0 [12th July 2020]
+
+### Added
+
+- Dragon Slider Widget Added
+- Title some style option added in General Widget
+
+### Fixed
+
+- Some minor issue fixed in Custom Slider
+- logo issue fixed in General Widget
+
+## 1.6.1 [10th May 2020]
+
+### Fixed
+
+- Scrolling issue fixed in Fluent Widget
+- layout issue fixed in Isolate Widget ( Thanks to Oğuz Kağan Yatağan )
+- Some minor issue fixed
+
+## 1.6.0 [9th May 2020]
+
+### Added
+
+- Event Calendar Widget Added
+- Fluent New Slider Widget Added
+- Loop, Animation Speed option added in all Widgets
+- HTML Tag option added in all widget
+- Some Navigation control option added in Multiscroll widget
+- Content Position option added in Isolate Widget
+- Content Alignment option added in all Widgets
+
+### Fixed
+
+- Navigation issue fixed in Multiscroll widget
+- Image Cropping issue fixed in Isolate Widget ( Thanks to Pier Serta )
+- Responsive Image issue fixed in WooCommerce Widget
+- Button issue fixed in slice skin Isolate Widget
+
+## 1.5.0 [2nd April 2020]
+
+### Added
+
+- Multiscroll Widget Added
+
+### Fixed
+
+- Lightbox video open issue
+
+## 1.4.2 [23th March 2020]
+
+### Added
+
+- Social Share added in Custom Slider Widget
+
+## 1.4.1 [15th February 2020]
+
+### Added
+
+- Custom Slider Widget Navigation New Style Added
+
+### Fixed
+
+- General Widget responsive issue Fixed
+- Woostand Widget control option & responsive issue Fixed
+- Custom Slider Widget Navigation Default spacing issue Fixed
+
+1.4.0 [26TH December 2019]
+
+### Added
+
+- WooStand new slider widget added
+
+### Fixed
+
+- some minor issue fixed
+
+## 1.3.0 [15th December 2019]
+
+### Added
+
+- Flogia Widget Added
+
+### Fixed
+
+- Custom slider Navigation Style issue fixed
+
+## 1.2.1 [5th December 2019]
+
+### Fixed
+
+- Custom slider fullwidth issue fixed
+
+
+## 1.2.0 [5th December 2019]
+
+### Added
+
+- Custom Slider widget added
+
+### Fixed
+
+- Some minor issue fixed
+
+
+## 1.1.1 [23th November 2019]
+
+###Fixed
+
+- Skin related control issue fixed
+
+## 1.1.0 [16th November 2019]
+
+### Added
+
+- WooCommerce Base Slider added
+- Brand new dashboard added
+- Upgrade option added in dashboard
+
+
+### Fixed
+
+- Image responsive issue fixed
+- Widget on/off issue fixed
+- Button link empty error fixed
+- Video thumb condition fixed for slice skin
+- Video background responsive issue fixed for meteor skin
+
+## 1.0.1 [4rd November 2019]
+
+### Added
+
+- Added Woocommerce Widget
+
+### Fixed
+
+- General widget meteor skin thumbnav video height issue
+- Isolate widget locate skin scroll down & dotnav number issue
+- Isolate widget slice skin video play button with thumbnav image show hide
+- Isolate widget slice skin social icon below background remove
+- Isolate widget slice skin excerpt height issue
+
+## 1.0.0
+- Initial Release
