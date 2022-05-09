@@ -3,10 +3,10 @@
     'use strict';
 
     var widgetPieces = function ($scope, $) {
-        var $pieces = $scope.find('.bdt-pieces-slider'),
+        var $pieces   = $scope.find('.bdt-pieces-slider'),
             $settings = $pieces.data('settings');
 
-        if (!$pieces.length) {
+        if ( !$pieces.length ) {
             return;
         }
 
@@ -14,21 +14,23 @@
 
             // Get all images and texts, get the `canvas` element, and save slider length
             var sliderCanvas = document.querySelector($settings.id + ' .pieces-slider__canvas');
-            var imagesEl = [].slice.call(document.querySelectorAll($settings.id + ' .pieces-slider__image'));
-            var textEl = [].slice.call(document.querySelectorAll($settings.id + ' .pieces-slider__text'));
+            var imagesEl     = [].slice.call(document.querySelectorAll($settings.id + ' .pieces-slider__image'));
+            var textEl       = [].slice.call(document.querySelectorAll($settings.id + ' .pieces-slider__text'));
             var slidesLength = imagesEl.length;
 
             // Define indexes related variables and functions
             var currentIndex = 0,
                 currentImageIndex, currentTextIndex, currentNumberIndex;
+
             // Update current indexes for image, text and number
             function updateIndexes() {
-                currentImageIndex = currentIndex * 3;
-                currentTextIndex = currentImageIndex + 1;
+                currentImageIndex  = currentIndex * 3;
+                currentTextIndex   = currentImageIndex + 1;
                 currentNumberIndex = currentImageIndex + 2;
             }
+
             updateIndexes();
-            var textIndexes = [];
+            var textIndexes   = [];
             var numberIndexes = [];
 
             // Some other useful variables
@@ -37,49 +39,49 @@
 
             // Options for images
             var imageOptions = {
-                angle: 45,
+                angle       : 45,
                 extraSpacing: {
                     extraX: 100,
                     extraY: 200
                 },
-                piecesWidth: function () {
+                piecesWidth : function () {
                     return Pieces.random(50, 200);
                 },
-                ty: function () {
+                ty          : function () {
                     return Pieces.random(-400, 400);
                 }
             };
 
             // Options for texts
             var textOptions = {
-                color: $settings.title.color || '#fff',
-                backgroundColor: $settings.title.background || '#556068',
+                color           : $settings.title.color || '#fff',
+                backgroundColor : $settings.title.background || '#556068',
                 backgroundRadius: $settings.title.backgroundRadius || 0,
-                fontSize: function () {
+                fontSize        : function () {
                     var fontSizeDesktop = $settings.title.fontSizeDesktop || 50,
-                        fontSizeTablet = $settings.title.fontSizeTablet || 30;
+                        fontSizeTablet  = $settings.title.fontSizeTablet || 30;
                     return windowWidth > 768 ? fontSizeDesktop : fontSizeTablet;
                 },
-                fontFamily: [$settings.title.fontFamily] || ["'Open Sans', sans-serif"],
-                padding: `${$settings.title.padding.top || 15} ${$settings.title.padding.right || 20} ${$settings.title.padding.bottom || 10} ${$settings.title.padding.left || 20}`,
-                angle: -45,
-                piecesSpacing: 2,
-                extraSpacing: {
+                fontFamily      : [$settings.title.fontFamily] || ["'Open Sans', sans-serif"],
+                padding         : `${$settings.title.padding.top || 15} ${$settings.title.padding.right || 20} ${$settings.title.padding.bottom || 10} ${$settings.title.padding.left || 20}`,
+                angle           : -45,
+                piecesSpacing   : 2,
+                extraSpacing    : {
                     extraX: 0,
                     extraY: 300
                 },
-                piecesWidth: function () {
+                piecesWidth     : function () {
                     return Pieces.random(50, 200);
                 },
-                ty: function () {
+                ty              : function () {
                     return Pieces.random(-200, 200);
                 },
-                translate: function () {
-                    if (windowWidth > 1120) return {
+                translate       : function () {
+                    if ( windowWidth > 1120 ) return {
                         translateX: 200,
                         translateY: 200
                     };
-                    if (windowWidth > 768) return {
+                    if ( windowWidth > 768 ) return {
                         translateX: 0,
                         translateY: 200
                     };
@@ -98,34 +100,34 @@
                 // padding: function() { return windowWidth > 768 ? '18 35 10 38' : '18 25 10 28'; },
 
 
-                color: $settings.number.color || '#fff',
-                backgroundColor: $settings.number.background || '#556068',
+                color           : $settings.number.color || '#fff',
+                backgroundColor : $settings.number.background || '#556068',
                 backgroundRadius: $settings.number.backgroundRadius || 0,
-                fontSize: function () {
+                fontSize        : function () {
                     var fontSizeDesktop = $settings.number.fontSizeDesktop || 50,
-                        fontSizeTablet = $settings.number.fontSizeTablet || 30;
+                        fontSizeTablet  = $settings.number.fontSizeTablet || 30;
                     return windowWidth > 768 ? fontSizeDesktop : fontSizeTablet;
                 },
-                fontFamily: [$settings.number.fontFamily] || ["'Open Sans', sans-serif"],
-                padding: `${$settings.number.padding.top || 18} ${$settings.number.padding.right || 25} ${$settings.number.padding.bottom || 10} ${$settings.number.padding.left || 30}`,
+                fontFamily      : [$settings.number.fontFamily] || ["'Open Sans', sans-serif"],
+                padding         : `${$settings.number.padding.top || 18} ${$settings.number.padding.right || 25} ${$settings.number.padding.bottom || 10} ${$settings.number.padding.left || 30}`,
 
 
-                angle: 0,
+                angle        : 0,
                 piecesSpacing: 2,
-                extraSpacing: {
+                extraSpacing : {
                     extraX: 10,
                     extraY: 10
                 },
-                piecesWidth: 35,
-                ty: function () {
+                piecesWidth  : 35,
+                ty           : function () {
                     return Pieces.random(-200, 200);
                 },
-                translate: function () {
-                    if (windowWidth > 1120) return {
+                translate    : function () {
+                    if ( windowWidth > 1120 ) return {
                         translateX: -340,
                         translateY: -180
                     };
-                    if (windowWidth > 768) return {
+                    if ( windowWidth > 768 ) return {
                         translateX: -240,
                         translateY: -180
                     };
@@ -137,31 +139,31 @@
             };
 
             // Build the array of items to draw using Pieces
-            var items = [];
+            var items       = [];
             var imagesReady = 0;
-            for (var i = 0; i < slidesLength; i++) {
+            for ( var i = 0; i < slidesLength; i++ ) {
                 // Wait for all images to load before initializing the slider and event listeners
-                var slideImage = new Image();
+                var slideImage    = new Image();
                 slideImage.onload = function () {
-                    if (++imagesReady == slidesLength) {
+                    if ( ++imagesReady == slidesLength ) {
                         initSlider();
                         initEvents();
                     }
                 };
                 // Push all elements for each slide with the corresponding options
                 items.push({
-                    type: 'image',
-                    value: imagesEl[i],
+                    type   : 'image',
+                    value  : imagesEl[i],
                     options: imageOptions
                 });
                 items.push({
-                    type: 'text',
-                    value: textEl[i].innerText,
+                    type   : 'text',
+                    value  : textEl[i].innerText,
                     options: textOptions
                 });
                 items.push({
-                    type: 'text',
-                    value: i + 1,
+                    type   : 'text',
+                    value  : i + 1,
                     options: numberOptions
                 });
                 // Save indexes
@@ -174,33 +176,33 @@
             // Initialize a Pieces instance with all items we want to draw
             function initSlider() {
                 // Stop any current animation if the slider was initialized before
-                if (piecesSlider) {
+                if ( piecesSlider ) {
                     piecesSlider.stop();
                 }
 
                 // Save the new Pieces instance
                 piecesSlider = new Pieces({
-                    canvas: sliderCanvas,
-                    items: items,
-                    x: 'centerAll',
-                    y: 'centerAll',
+                    canvas       : sliderCanvas,
+                    items        : items,
+                    x            : 'centerAll',
+                    y            : 'centerAll',
                     piecesSpacing: 1,
                     // fontFamily: ["'Rubik Mono One', sans-serif"],
                     animation: {
                         duration: function () {
                             return Pieces.random(1000, 2000);
                         },
-                        easing: 'easeOutQuint'
+                        easing  : 'easeOutQuint'
                     },
                     // debug: true
                 });
 
                 // Animate all numbers to rotate clockwise indefinitely
                 piecesSlider.animateItems({
-                    items: numberIndexes,
+                    items   : numberIndexes,
                     duration: 20000,
-                    angle: 360,
-                    loop: true
+                    angle   : 360,
+                    loop    : true
                 });
 
                 // Show current items: image, text and number
@@ -215,9 +217,9 @@
 
                 // Select prev or next slide using arrow keys
                 document.addEventListener('keydown', function (e) {
-                    if (e.keyCode == 37) { // left
+                    if ( e.keyCode == 37 ) { // left
                         prevItem();
-                    } else if (e.keyCode == 39) { // right
+                    } else if ( e.keyCode == 39 ) { // right
                         nextItem();
                     }
                 });
@@ -230,39 +232,39 @@
             function showItems() {
                 // Show image pieces
                 piecesSlider.showPieces({
-                    items: currentImageIndex,
+                    items : currentImageIndex,
                     ignore: ['tx'],
                     singly: true,
                     update: (anim) => {
                         // Stop the pieces animation at 60%, and run a new indefinitely animation of `ty` for each piece
-                        if (anim.progress > 60) {
+                        if ( anim.progress > 60 ) {
                             var piece = anim.animatables[0].target;
-                            var ty = piece.ty;
+                            var ty    = piece.ty;
                             anime.remove(piece);
                             anime({
-                                targets: piece,
-                                ty: piece.h_ty < 300 ? [{
-                                    value: ty + 10,
+                                targets : piece,
+                                ty      : piece.h_ty < 300 ? [{
+                                    value   : ty + 10,
                                     duration: 1000
                                 }, {
-                                    value: ty - 10,
+                                    value   : ty - 10,
                                     duration: 2000
                                 }, {
-                                    value: ty,
+                                    value   : ty,
                                     duration: 1000
                                 }] : [{
-                                    value: ty - 10,
+                                    value   : ty - 10,
                                     duration: 1000
                                 }, {
-                                    value: ty + 10,
+                                    value   : ty + 10,
                                     duration: 2000
                                 }, {
-                                    value: ty,
+                                    value   : ty,
                                     duration: 1000
                                 }],
                                 duration: 2000,
-                                easing: 'linear',
-                                loop: true
+                                easing  : 'linear',
+                                loop    : true
                             });
                         }
                     }
@@ -273,7 +275,7 @@
                 });
                 piecesSlider.showPieces({
                     items: currentNumberIndex,
-                    ty: function (p, i) {
+                    ty   : function (p, i) {
                         return p.s_ty - [-3, 3][i % 2];
                     }
                 });
@@ -309,18 +311,18 @@
 
             // User starts resizing, so wait 300 ms before reinitialize the slider
             function resizeStart() {
-                if (initial) {
+                if ( initial ) {
                     initial = false;
-                    if (hideTimer) clearTimeout(hideTimer);
+                    if ( hideTimer ) clearTimeout(hideTimer);
                     sliderCanvas.classList.add('pieces-slider__canvas--hidden');
                 }
-                if (resizeTimer) clearTimeout(resizeTimer);
+                if ( resizeTimer ) clearTimeout(resizeTimer);
                 resizeTimer = setTimeout(resizeEnd, 300);
             }
 
             // User ends resizing, then reinitialize the slider
             function resizeEnd() {
-                initial = true;
+                initial     = true;
                 windowWidth = window.innerWidth;
                 initSlider();
                 hideTimer = setTimeout(() => {

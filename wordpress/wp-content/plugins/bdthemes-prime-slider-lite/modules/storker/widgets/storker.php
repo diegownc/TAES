@@ -817,7 +817,7 @@
                 Group_Control_Background::get_type(),
                 [
                     'name'      => 'button_hover_background',
-                    'selector'  => '{{WRAPPER}} .bdt-prime-slider-storker .bdt-storker-btn a:hover',
+                    'selector'  => '{{WRAPPER}} .bdt-prime-slider-storker .bdt-storker-btn a::before',
                 ]
             );
     
@@ -1050,7 +1050,7 @@
                     'label'     => esc_html__('Animated Line Color', 'bdthemes-prime-slider'),
                     'type'      => Controls_Manager::COLOR,
                     'selectors' => [
-                        '{{WRAPPER}} .bdt-storker-thumbs .bdt-item.swiper-slide-active .bdt-storker-content::after' => 'background: {{VALUE}};',
+                        '{{WRAPPER}} .bdt-storker-thumbs .bdt-item.swiper-slide-active::after' => 'background: {{VALUE}};',
                     ],
                 ]
             );
@@ -1215,7 +1215,7 @@
 				Group_Control_Background::get_type(),
 				[
 					'name'     => 'thumbs_hover_background',
-					'selector' => '{{WRAPPER}} .bdt-storker-thumbs .bdt-item:hover',
+					'selector' => '{{WRAPPER}} .bdt-storker-thumbs .bdt-item::before',
 				]
 			);
 			
@@ -1312,7 +1312,7 @@
 				Group_Control_Background::get_type(),
 				[
 					'name'     => 'thumbs_active_background',
-					'selector' => '{{WRAPPER}} .bdt-storker-thumbs .bdt-item.swiper-slide-active',
+					'selector' => '{{WRAPPER}} .bdt-storker-thumbs .bdt-item.swiper-slide-active::before',
 				]
 			);
 			

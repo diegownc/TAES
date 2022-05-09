@@ -190,7 +190,7 @@
   text-align: left;
 }
 .eael-woo-product-carousel-container.preset-2 .eael-product-carousel .carousel-overlay {
-  background: #5f3ae069;
+  background: rgba(95, 58, 224, 0.4117647059);
   position: absolute;
   height: 100%;
   width: 100%;

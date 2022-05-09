@@ -20,7 +20,9 @@ $modules_active = \ElementsKit_Lite\Config\Module_List::instance()->get_list('ac
             <li><a href="edit.php?post_type=elementskit_widget"><?php esc_html_e('Widget Builder', 'elementskit-lite'); ?></a></li>
         </div>
         <div class="attr-row">
-            <?php foreach($modules_all as $module => $module_config): ?>
+            <?php foreach($modules_all as $module => $module_config):
+                if( !isset($module_config['package']) ) $module_config['package'] = ''; // for avoiding error when add module from theme
+                ?>
             <div class="attr-col-md-6 attr-col-lg-4" <?php echo ($module_config['package'] != 'pro-disabled' ? '' : 'data-attr-toggle="modal" data-target="#elementskit_go_pro_modal"'); ?>>
             <?php
                 $this->utils->input([

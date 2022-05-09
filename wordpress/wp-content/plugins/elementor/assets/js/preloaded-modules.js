@@ -1,4 +1,4 @@
-/*! elementor - v3.6.2 - 04-04-2022 */
+/*! elementor - v3.6.5 - 27-04-2022 */
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["preloaded-modules"],{
 
 /***/ "../node_modules/@babel/runtime/helpers/defineProperty.js":

@@ -1,3 +1,47 @@
+## 2.9.3 [27th April 2022]
+
+### Fixed
+
+- Button link issue fixed in General Widget (Thanks to Kathleen)
+- Swiper JS issue fixed in Event Calendar Slider (Thanks to David Price)
+
+### Updated
+
+- Navigation style updated in Blog, Marble, WooCommerce, Vertex, Fiestar Widgets
+- Responsive Mode Typography updated in Dragon Widget
+- Navigation And Scroll Button, Read More Button updated in Isolate Widget
+- Navigation, Pagination & Read More Button updated in Knily Widget
+- Social Share And Navigation Button Hover Color Add updated in Monster Widget
+- Close Button Animation Add Pacific Widget
+- Social Share And Navigation Button Hover Color Add updated in Mount Widget
+- Social Share Hover Color Add  updated in Pagepiling Widget
+- Thumb slide overlay animation & Read more Button updated Storker Widget
+- Read More Button updated in Rubix, Sequester Widgets
+
+## 2.9.2 [16th April 2022]
+
+### Fixed
+
+- Reveal widget not working issue fixed
+
+## 2.9.1 [7th April 2022]
+
+### Fixed
+
+- RTL Button Arrow color issue fixed in Dragon Widget (Thanks to Leoceros)
+
+## 2.9.0 [6th April 2022]
+
+### Added
+
+- Prism Widget Added
+- Elysium Widget Added
+- Modal add to cart Spacing option added in Woocircle Widget
+
+### Fixed
+
+- Text Stroke color issue fixed in Dragon Widget (Thanks to Emil Thomsen)
+
 ## 2.8.1 [24th March 2022]
 
 ### Fixed

@@ -152,6 +152,18 @@ class PrimeSlider_Admin_Settings
                 'video_url'    => 'https://youtu.be/eL0a9f7VEtc',
             ];
         }
+        if ( ps_is_elysium_enabled() ) {
+            $settings_fields['prime_slider_active_modules'][] = [
+                'name'         => 'elysium',
+                'label'        => esc_html__( 'Elysium', 'bdthemes-prime-slider' ),
+                'type'         => 'checkbox',
+                'default'      => "off",
+                'widget_type'  => 'free',
+                'content_type' => 'static new',
+                'demo_url'     => 'https://primeslider.pro/demo/elysium/',
+                'video_url'    => '',
+            ];
+        }
         if ( ps_is_event_calendar_enabled() ) {
             $settings_fields['prime_slider_active_modules'][] = [
                 'name'         => 'event-calendar',
@@ -358,13 +370,37 @@ class PrimeSlider_Admin_Settings
                 'video_url'    => '',
             ];
         }
+        if ( ps_is_prism_enabled() ) {
+            $settings_fields['prime_slider_active_modules'][] = [
+                'name'         => 'prism',
+                'label'        => esc_html__( 'Prism', 'bdthemes-prime-slider' ),
+                'type'         => 'checkbox',
+                'default'      => "off",
+                'widget_type'  => 'pro',
+                'content_type' => 'static new',
+                'demo_url'     => 'https://primeslider.pro/demo/prism/',
+                'video_url'    => '',
+            ];
+        }
+        // if ( ps_is_landscape_enabled() ) {
+        //     $settings_fields['prime_slider_active_modules'][] = [
+        //         'name'         => 'landscape',
+        //         'label'        => esc_html__( 'Landscape', 'bdthemes-prime-slider' ),
+        //         'type'         => 'checkbox',
+        //         'default'      => "off",
+        //         'widget_type'  => 'pro',
+        //         'content_type' => 'static new',
+        //         'demo_url'     => 'https://primeslider.pro/demo/landscape/',
+        //         'video_url'    => '',
+        //     ];
+        // }
         if ( ps_is_reveal_enabled() ) {
             $settings_fields['prime_slider_active_modules'][] = [
                 'name'         => 'reveal',
                 'label'        => esc_html__( 'Reveal', 'bdthemes-prime-slider' ),
                 'type'         => 'checkbox',
                 'default'      => "off",
-                'widget_type'  => 'free',
+                'widget_type'  => 'pro',
                 'content_type' => 'static new',
                 'demo_url'     => 'https://primeslider.pro/demo/reveal/',
                 'video_url'    => '',

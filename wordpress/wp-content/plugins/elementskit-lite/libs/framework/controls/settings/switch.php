@@ -13,8 +13,7 @@
         'facebook-messenger',
         'advanced-tooltip',
         'fluent-forms',
-        'zoom',
-        'trustpilot'
+        'zoom'
     ];
 ?>
     <div class="ekit-admin-input-switch ekit-admin-card-shadow attr-card-body">

@@ -2375,8 +2375,7 @@ class Blog extends Widget_Base
             'label'     => __( 'Arrows Color', 'bdthemes-prime-slider' ),
             'type'      => Controls_Manager::COLOR,
             'selectors' => [
-            '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous svg, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next svg'       => 'color: {{VALUE}}',
-            '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next:before, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous:before' => 'background: {{VALUE}}',
+            '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous svg, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next svg' => 'color: {{VALUE}}',
         ],
             'condition' => [
             'show_navigation_arrows' => [ 'yes' ],
@@ -2455,7 +2454,6 @@ class Blog extends Widget_Base
             'type'      => Controls_Manager::COLOR,
             'selectors' => [
             '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous:hover svg, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next:hover svg' => 'color: {{VALUE}}',
-            '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next:before, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous:before'       => 'background: {{VALUE}}',
         ],
             'condition' => [
             'show_navigation_arrows' => [ 'yes' ],
@@ -2465,7 +2463,10 @@ class Blog extends Widget_Base
             'name'      => 'arrows_hover_background',
             'label'     => __( 'Background', 'bdthemes-prime-slider' ),
             'types'     => [ 'classic', 'gradient' ],
-            'selector'  => '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next:hover, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous:hover',
+            'selector'  => '
+                    {{WRAPPER}} .bdt-prime-slider-skin-blog .bdt-slidenav::before, 
+                    {{WRAPPER}} .bdt-prime-slider-skin-zinest .bdt-slidenav::before,
+                    {{WRAPPER}} .bdt-prime-slider-skin-coral .bdt-slidenav::before',
             'condition' => [
             'show_navigation_arrows' => [ 'yes' ],
         ],

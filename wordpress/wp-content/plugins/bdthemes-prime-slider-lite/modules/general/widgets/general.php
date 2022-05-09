@@ -895,7 +895,7 @@ class General extends Widget_Base
             'active' => true,
         ],
             'condition' => [
-            'title!' => '',
+            'slide_button_text!' => '',
         ],
         ] );
         $repeater->add_control( 'excerpt', [
@@ -3416,7 +3416,7 @@ class General extends Widget_Base
             true
         );
         
-        if ( $content['button_link']['url'] ) {
+        if ( isset( $content['button_link']['url'] ) ) {
             $this->add_render_attribute(
                 'slider-button',
                 'href',
@@ -3509,12 +3509,14 @@ class General extends Widget_Base
         }
         
         $this->add_render_attribute( 'slide_content_animate', 'class', 'bdt-prime-slider-content' );
+        $title_link_href = ( isset( $slide_content['title_link']['url'] ) ? esc_url( $slide_content['title_link']['url'] ) : 'javascript:void(0);' );
+        $title_link_target = ( isset( $slide_content['title_link']['is_external'] ) ? '_blank' : '_self' );
         $this->add_render_attribute(
             [
             'title-link' => [
             'class'  => [ 'bdt-slider-title-link' ],
-            'href'   => ( $slide_content['title_link']['url'] ? esc_url( $slide_content['title_link']['url'] ) : 'javascript:void(0);' ),
-            'target' => ( $slide_content['title_link']['is_external'] ? '_blank' : '_self' ),
+            'href'   => $title_link_href,
+            'target' => $title_link_target,
         ],
         ],
             '',

@@ -69,6 +69,9 @@ final class Manager
         if ( ps_is_dragon_enabled() ) {
             $modules[] = 'dragon';
         }
+        if ( ps_is_elysium_enabled() ) {
+            $modules[] = 'elysium';
+        }
         if ( ps_is_fiestar_enabled() ) {
             $modules[] = 'fiestar';
         }
@@ -101,9 +104,6 @@ final class Manager
         }
         if ( ps_is_pieces_enabled() ) {
             $modules[] = 'pieces';
-        }
-        if ( ps_is_reveal_enabled() ) {
-            $modules[] = 'reveal';
         }
         // if ( ps_is_diagonal_enabled() ) {
         //     $modules[] = 'diagonal';

@@ -74,6 +74,9 @@ class Bootstrap
     // modules
     protected $installer;
 
+
+    const EAEL_PROMOTION_FLAG = 2;
+    const EAEL_ADMIN_MENU_FLAG = 2;
     /**
      * Singleton instance
      *
@@ -161,10 +164,12 @@ class Bootstrap
 
 	    add_action( 'wp_ajax_eael_clear_widget_cache_data', [ $this, 'eael_clear_widget_cache_data' ] );
 
-	    if ( version_compare( ELEMENTOR_VERSION, '3.5.0', '>=' ) ) {
-		    add_action( 'elementor/controls/register', array($this, 'register_controls') );
-	    } else {
-		    add_action('elementor/controls/controls_registered', array($this, 'register_controls'));
+	    if ( defined( 'ELEMENTOR_VERSION' ) ) {
+		    if ( version_compare( ELEMENTOR_VERSION, '3.5.0', '>=' ) ) {
+			    add_action( 'elementor/controls/register', array( $this, 'register_controls' ) );
+		    } else {
+			    add_action( 'elementor/controls/controls_registered', array( $this, 'register_controls' ) );
+		    }
 	    }
 
         // Elements
@@ -244,8 +249,14 @@ class Bootstrap
                 add_action('admin_notices', array($this, 'elementor_not_loaded'));
             }
 
+
+
+	        add_action( 'in_admin_header', [ $this, 'remove_admin_notice' ] );
+
 	        //handle typeform auth token
 	        add_action('admin_init', [$this, 'typeform_auth_handle']);
+
+
 
 
 	        // On Editor - Register WooCommerce frontend hooks before the Editor init.
@@ -253,6 +264,8 @@ class Bootstrap
 	        if ( ! empty( $_REQUEST['action'] ) && 'elementor' === $_REQUEST['action'] ) {
 		        add_action( 'init', [ $this, 'register_wc_hooks' ], 5 );
 	        }
+
+	        add_action( 'eael_admin_page_setting', [ $this, 'eael_show_admin_menu_notice' ] );
 
         }
 

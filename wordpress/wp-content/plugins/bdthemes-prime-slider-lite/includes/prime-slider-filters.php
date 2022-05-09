@@ -273,3 +273,21 @@
             return apply_filters( 'primeslider/widgets/pieces', true );
         }
     }
+
+    if ( !function_exists( 'ps_is_prism_enabled' ) ) {
+        function ps_is_prism_enabled() {
+            return apply_filters( 'primeslider/widgets/prism', true );
+        }
+    }
+
+    if ( !function_exists( 'ps_is_elysium_enabled' ) ) {
+        function ps_is_elysium_enabled() {
+            return apply_filters( 'primeslider/widgets/elysium', true );
+        }
+    }
+
+    // if ( !function_exists( 'ps_is_landscape_enabled' ) ) {
+    //     function ps_is_landscape_enabled() {
+    //         return apply_filters( 'primeslider/widgets/landscape', true );
+    //     }
+    // }

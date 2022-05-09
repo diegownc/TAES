@@ -3,13 +3,13 @@ Contributors: bdthemes, selimmw, mohammaadfarid, bdkoder, abutalib, maudud, soha
 Donate link: http://bdthemes.com/
 Tags: elementor, prime slider, modern slider, slider addons, elementor addons, dynamic slider, woocommerce slider, multiscroll
 Requires at least: 5.0.0
-Tested up to: 5.9.2
+Tested up to: 5.9.3
 Requires PHP: 5.6.42
-Stable tag: 2.8.1
+Stable tag: 2.9.3
 License: GPL3
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Elementor requires at least: 3.0.0
-Elementor tested up to: 3.6.1
+Elementor tested up to: 3.6.4
 
 Best Addon for Elementor WordPress Plugin with 40+ Awesome slider design that you can use your modern website with elementor page builder.
 
@@ -50,36 +50,35 @@ In search of an all-in-one plugin for creating a slider for a WordPress website?
 
 = Full Featured Free Widgets For Lifetime =
 
-1. [General - Base](https://primeslider.pro/demo/general/) - General slider comes with some uniue features. We focused on visitors need. Make them comfortable with the more organized content.
-2. [Meteor - Skin](https://primeslider.pro/demo/general-skin-meteor/) - Same like general slider, meteor  slider also consist of unique features. The layout is different and also the navigation placement is different.
-3. [Crelly - Skin](https://primeslider.pro/demo/general-skin-crelly/) - Simplicity gives crelly slider a aweso0me looks.
-social share buttons, slider number and navigation with heading and sub heading is the key feature. 
-4. [Slide - Skin](https://primeslider.pro/demo/general-skin-slide/) -  To focus you key slogan, slide general slider is the exactly awesome slider for your website. Mainly its background color shapes makes this slider an awesome extra feature that can add more values  to your content.
-5. [Isolate - Base](https://primeslider.pro/demo/isolate/) - Feature your product or services – Isolate slider is the perfect choice. Add your related media files with heading and call to  action button can increase  you conversion rate.
-6. [Locate - Skin](https://primeslider.pro/demo/isolate-skin-locate/) - Another clean slider with trendy design style. With a background box to highlight the media files to focus more.
-7. [Slice - Skin](https://primeslider.pro/demo/isolate-skin-slice/) - Very very unique design with new ideas to feature your service or product or tag line.Three different part background color gives this slider a more dynamic way to design hero section with Prime slider.
-8. [Blog - Base](https://primeslider.pro/demo/blog-page/) - Blog slider is a specially developed slider widget for blogging websites, by Prime Slider plugin. The slider acts as a single page blog guide with a stunning graphic and a modern content layout. See the demo
-9. [Coral - Skin](https://primeslider.pro/demo/blog-skin-coral/) - Blog Skin Coral has a mind-blowing hypnotic layout design with a serene image content arrangement on your home page. The slider looks mystic and charming while it's fully customizable. See the demo
-10. [Folio - Skin](https://primeslider.pro/demo/blog-skin-folio/) - Blog Skin Folio is a compact hero section layout package with a dynamic background animation (Kenburns animation) with the author bio layout at the bottom. This is a auto span slider with a self changing post background. See the demo
-11. [Zinest - Skin](https://primeslider.pro/demo/blog-skin-zinest/) - Blog post slider with post thumbnail, post title and excerpt options with navigation and other basic prime slider – we named it zinest slider.
-12. [Flogia](https://primeslider.pro/demo/flogia/) - Flogia slider is a blog-type post slider widget with a thumb gallery at the bottom. This slider was designed to present an overwhelming slider graphics on your hero page. See the demo
-13. [WooCommerce](https://primeslider.pro/demo/woocommerce/) - If you want a cool look WooCommerce based website homepage so you must use our prime slider WooCommerce widget.
-14. [Woolamp](https://primeslider.pro/demo/woolamp/) - Woolamp is a WooCommerce product slider widget having a blog-type layout. Developed by Prime Slider, this widget support all features of WooCommerce including social share. See the demo
-15. [Multiscroll](https://primeslider.pro/demo/multiscroll/) - The Multiscroll slider lets you design one page unique split-image slider with animated slider panels. It's a full-screen slider with no space for a second header or footer, just use the whole page. see the demo
-16. [Dragon](https://primeslider.pro/demo/dragon/) - Dragon slider is the most notorious slider widget with tempting graphics and appealing content layout. The slider gives off a modern and mysterious vide with a stunning background style. See the demo
-17. [Pagepiling](https://primeslider.pro/demo/pagepiling/) - Pagepiling slider is another one-page section slider with a lightbox & instant social share buttons. The slider has a minimalistic layout and is suitable for a single section web page. See the demo
-18. [Sequester](https://primeslider.pro/demo/sequester/) - Sequester slider has a modern content layout with navigation stacked on the right-hand position. The slider comes with a lot of text animations that makes it look sleek yet minimalistic. See the demo
-19. [Mount](https://primeslider.pro/demo/mount/) - Mount slider comes with some uniue features. We focused on visitors need. Make them comfortable with the more organized content.
-20. [Storker](https://primeslider.pro/demo/storker/) - Storker is a full-width slider widget developed by Prime Slider and team. The slider presents smooth transition between slider items with a blog type approach. The main layout consist of a post list and active detail of the post in broad view. See the demo
-21. [Mercury](https://primeslider.pro/demo/mercury/) - Mercury base slider is a minimalistic slider widget developed by the Prime Slider plugin. Display posts using a lot of white background to let users keep their focus on the content. See the demo
-22. [Fiestar](https://primeslider.pro/demo/fiestar/) - Flestar is a totally unique carousel type slider widget developed by the Prime Slider plugin. The slider displays post image in a thumb pin style with minimum detail (title & category by default). See the demo
-23. [Vertex](https://primeslider.pro/demo/vertex/) - Vertex base slider is a unique and tricky slider widget that presents your posts resembling a horizontal timeline. The whole slider can be customized to perfectly fit as a featured section on your site. See the demo
-24. [Rubix](https://primeslider.pro/demo/rubix/) - Rubix makes it a fun experience for your blog visitors by adding a box-puzzle type blog layout on your web page. This is a first-ever widget that is completely responsive and looks unique or modern. See the demo
-25. [Pacific](https://primeslider.pro/demo/pacific/) - Pacific Slider lets you add a responsive slider widget to your blog. It has several cool features. Not only does this make the slider look unique but it also makes it more eye-catching and dynamic than other sliders on the market. See the demo
+1. [General - Base](https://primeslider.pro/demo/general/) - General is an optimistic slider widget to power future WordPress blogging sites with a fine-tuned layout suitable for any kind of website. Packed with smooth transition effects and text animations to bring life to your website
+2. [Meteor - Skin](https://primeslider.pro/demo/general-skin-meteor/) - Meteor is a skin of General Slider that takes a completely different turn to display your post content with a sleek minimalistic layout. Slow transitions combined with thumb posts makes the interface suitable for all blogs and websites
+3. [Crelly - Skin](https://primeslider.pro/demo/general-skin-crelly/) - As a part of General Base slider, Crelly combines fluid color swatches with a wide canvas to bring out the inner beauty of your posts. The slider has heightened social share buttons, adding more impact on social engagements
+4. [Slide - Skin](https://primeslider.pro/demo/general-skin-slide/) -  The Slide skin of General Base is the best slider for making an accent hero page focused on your business identity tincture. With a minimalistic design and creative shade design, the slider is made perfect for any website
+5. [Isolate - Base](https://primeslider.pro/demo/isolate/) - The Isolate base slider is committed to highlight details of your product, conjuring a dynamic slider with a product image, a mega heading, interactive buttons, and slider navigations. The slider comes witha slide away button too
+6. [Locate - Skin](https://primeslider.pro/demo/isolate-skin-locate/) - The Locate skin comes with a minimalistic slider design, offering a more compact view of your product along with colorful social share buttons and navigations. It takes just you and Locate to design your dream website in not time
+7. [Slice - Skin](https://primeslider.pro/demo/isolate-skin-slice/) - Slice is a heavier version of the Isolate slider, with more graphics, transitions, social share buttons, and a thumb video button at the bottom right. Use Slice to highlight your featured products in your brand color on hero pages
+8. [Blog - Base](https://primeslider.pro/demo/blog-page/) - Blog base makes the most profound layout to display your blog posts on any modern WordPress blogging website. The slider offers a eye-catchy post interface combined with accent colors to bring the most out of the whole layout
+9. [Coral - Skin](https://primeslider.pro/demo/blog-skin-coral/) - Part of Blog slider, the Coral skin boosts the slider navigations by adding thumb post module along with scroll down button to jump to the designated section in one click. Enjoy modern blog interfaces with lavish background images
+10. [Folio - Skin](https://primeslider.pro/demo/blog-skin-folio/) - The Blog skin Folio is an automated blog slider with crystal clear graphics, crisp text animations, and a smooth background transition. Made for blogs, the slider comes with a wide bezel with giant social share buttons curved out
+11. [Zinest - Skin](https://primeslider.pro/demo/blog-skin-zinest/) - Blog skin Zinest has the most vibrant post interface for publishing WordPress blogs. The slider comes with a professional post layout having animated blog info, a thumb post gallery at the bottom and an inline navigation system.
+12. [Flogia](https://primeslider.pro/demo/flogia/) - Flogia is a unique slider for WordPress that combines retina-ready graphics with animated navigation, cool text animations, and a floating thumb gallery to engage the visitors with top-notch content delivery, just what you need
+13. [WooCommerce](https://primeslider.pro/demo/woocommerce/) - WooCommerce slider for Elementor makes the perfect homepage slider to showcase your business using a direct content focus by showing the whole detail of the products along with the price, an add-to-cart button, and social share
+14. [Woolamp](https://primeslider.pro/demo/woolamp/) - The Woolamp slider was designed to create a direct connection with your users and push them to make decisions faster, securing more ROI and boosting your business. The slider offers a minimalistic but appealing content delivery
+15. [Multiscroll](https://primeslider.pro/demo/multiscroll/) - Creative WordPress sliders like Multiscroll can turn your average website into a super dynamic hero page that changes with cursor scrollings and makes the slider occupy the whole canvas for a broad user-interactive layout
+16. [Dragon](https://primeslider.pro/demo/dragon/) - Dragon is a charming WordPress slider plugin for displaying posts, products, services on your landing page with an exquisite interface made to perform beyond your expectations. Comes with animations and smart navigation
+17. [Pagepiling](https://primeslider.pro/demo/pagepiling/) - The combination of a minimalistic background graphics and sleek slider scrolling effect, just like a paper flip, makes Pagepilling a one-of-a-kind slider for WordPress websites. It's easy, fun, and fast page slider widget.
+18. [Sequester](https://primeslider.pro/demo/sequester/) - Squester is another minimalistic slider for WordPress that was intended to increase your brand value, social engagement, and promote products with customizable animated navigations, mega heading, button social share, and more
+19. [Mount](https://primeslider.pro/demo/mount/) - Want a WordPress slider that can create big impact in your audience? Mount Slider of Prime Slider plugin offers a broad animated headline along with smooth background, text, and navigation transistions over an HD background 
+20. [Storker](https://primeslider.pro/demo/storker/) - Storker is the most attractive slider for blogging website, offering a fast-paced post delivery with thumb post gallery, navigations, button, category, and meta. The slider has a smooth transistion effect parralelled with the thumb gallery
+21. [Mercury](https://primeslider.pro/demo/mercury/) - Wanting to create the perfect post slider for your blogging website? Mercury answers your call with a fresh new outlook to showcase your blog posts with a minimalistic combination of text and image side-by-side and lots of smooth transitions to keep your visitors engaged.
+22. [Fiestar](https://primeslider.pro/demo/fiestar/) - Fiestar is a polymorphed slider widget by the Prime Slider plugin that combines post accordion and slider together to create the perfect harmony as a landing page slider widget to feature your posts, products, and everything you need.
+23. [Vertex](https://primeslider.pro/demo/vertex/) - Dive into the memory lane of your top-list blog posts by featuring them with Vertex. This is a seamless slider widget that combines visual graphics with cool animation effects to capture the eyes of your visitors in a hurry.
+24. [Rubix](https://primeslider.pro/demo/rubix/) - Rubix is a unique slider widget brought to you by Prime Slider that is designed to deliver content with a modded layout interface to maximize user experience with a fresh new innovative design and animations for WordPress websites
+25. [Pacific](https://primeslider.pro/demo/pacific/) - Pacific is a minimalistic slider widget for WordPress that offers a dramatic post background layout with a category, title, meta, read more button, and seamless navigation systems. The interface is similar to accordion's and is best for a quick blog walkthrough.
 26. [Paranoia](https://primeslider.pro/demo/paranoia/) - Up for an eccentric post layout for your blogging website? The Paranoia slider widget is a totally unique concept for blogs with a fun and interesting post layout animation to boost your user experience. See the demo
 27. [Pieces](https://primeslider.pro/demo/pieces/) - Ready for the futuristic slider for your blog site? Grab Pieces slider and bend the rules of graphics and animation into a fun and super amazing slider interface.
-28. [Reveal](https://primeslider.pro/demo/reveal/) - Now make robust and dynamic hero page with morphed slider background using our Prime Slider reveal widget. See the demo
-29. [Woocircle](https://primeslider.pro/demo/woocircle/) - Do you want to display products in circles? Then Woocircle is the perfect widget to put you products on the price list and let customers enjoy a nice view.
+28. [Woocircle](https://primeslider.pro/demo/woocircle/) - Do you want to display products in circles? Then Woocircle is the perfect widget to put you products on the price list and let customers enjoy a nice view.
+29. [Elysium](https://primeslider.pro/demo/elysium/) - The Elysium slider widget can be the right choice for your website to showcase your featured products, items, or services with a peek-a-boo slideshow interface and seamless navigation. The perfect fit for your WordPress website.
 
 = Pro Version =
 
@@ -94,6 +93,8 @@ social share buttons, slider number and navigation with heading and sub heading 
 9. [Marble](https://primeslider.pro/demo/marble/) - Marble base slider is a unique and tricky slider widget that presents your posts resembling a horizontal timeline. The whole slider can be customized to perfectly fit as a featured section on your site. See the demo
 10. [Astoria](https://primeslider.pro/demo/astoria/) - Astoria is a wonderful slider widget for decorating your hero page with the perfect and elegant looking slide. Equipped with social share buttons, the slider can easily catch your visitor's eyes, enough to boost the first impression to the maximum. See the demo
 11. [Crossroad](https://primeslider.pro/demo/crossroad/) - Looking for something fun? The Crossroad Slider widget is the craziest looking slider you will ever find owned by the Prime Slider plugin. Now you can display slider posts in a marveled way using a totally new concept of art. See the demo
+12. [Reveal](https://primeslider.pro/demo/reveal/) - The Reveal slider has been developed to deliver content with active reveal transitions to pique user interest and boost your overall user engagement. The slider interface packs a lot of animation properties but easier to operate
+13. [Prism](https://primeslider.pro/demo/prism/) - The Prism slider presents a dignified post layout having a pristine background graphic and centered item image to drag the focus of your visitors on your product into your WordPress website. Make your website go viral with the awesome Prism slider widget for WordPress.
 
 == Featured By: == Famous Publications
 
@@ -152,6 +153,36 @@ e.g.
 2. Activate the plugin through the 'Plugins' menu in WordPress
  
 == Changelog ==
+
+= 2.9.3 [27th April 2022] =
+
+* Fixed: Button link issue fixed in General Widget (Thanks to Kathleen)
+* Fixed: Swiper JS issue fixed in Event Calendar Slider (Thanks to David Price)
+* Updated: Navigation style updated in Blog, Marble, WooCommerce, Vertex, Fiestar Widgets
+* Updated: Responsive Mode Typography updated in Dragon Widget
+* Updated: Navigation And Scroll Button, Read More Button updated in Isolate Widget
+* Updated: Navigation, Pagination & Read More Button updated in Knily Widget
+* Updated: Social Share And Navigation Button Hover Color Add updated in Monster Widget
+* Updated: Close Button Animation Add Pacific Widget
+* Updated: Social Share And Navigation Button Hover Color Add updated in Mount Widget
+* Updated: Social Share Hover Color Add  updated in Pagepiling Widget
+* Updated: Thumb slide overlay animation & Read more Button updated Storker Widget
+* Updated: Read More Button updated in Rubix, Sequester Widgets
+
+= 2.9.2 =
+
+* Fixed: Reveal widget not working issue fixed
+
+= 2.9.1 =
+
+* Fixed: RTL Button Arrow color issue fixed in Dragon Widget (Thanks to Leoceros)
+
+= 2.9.0 =
+
+* Added: Prism Widget Added
+* Added: Elysium Widget Added
+* Added: Modal add to cart Spacing option added in Woocircle Widget
+* Fixed: Text Stroke color issue fixed in Dragon Widget (Thanks to Emil Thomsen)
 
 = 2.8.1 =
 
@@ -503,18 +534,43 @@ e.g.
 
 == Frequently Asked Questions ==
 
-### What page builder is support Prime Slider plugin?
+### How can I add Prime Slider to my website?
 
-- Nowadays Elementor Page Builder is a powerful page builder for WordPress as like as Visual Composer, Divi Builder Beaver Builder. So it supports only the Elementor Page Builder. But we have plan more in the future.
+- Just download Prime Slider on your WordPress website and drag-n-drop slider widgets/modules inside the target page where you want to use the slider.
 
 
-### Is Prime Slider compatible my theme?
+### Do you have documentation of your plugin?
 
-- Normally our prime slider is compatible with most of theme and cross browser that we have tested. If happen very few change to your site looking, no problem our strong support team is dedicated for fixing your minor problem.
+- Of course, we offer a detailed guideline for each module/widget of Prime Slider in order to get you introduced to the features and functions properly.
 
-### How should I get updates?
+### What should I do if I face any issues?
 
-- When we release a update version, then automatically you will get a notification on WordPress plugin page, so you can update from there. Thereafter you want to update manually then just download it from here then remove the old plugin and install it again.
+- Contact us on LiveChat or send us a support ticket so we can learn and fix the issue. Our developer team is always ready to support our customers.
+
+### Is Prime Slider responsive?
+
+- Yes, Prime Slider is made to fit any kind of display size (mobile, tablet, laptop, or PC) and offers 100% responsiveness.
+
+### Can I customize the fonts of the slider?
+
+- Of course, you can. Prime Slider lets you customize the font using a dedicated Typography option for all slider widgets, texts, headings, and meta so you can enjoy complete freedom over the layout.
+
+### Can I show multiple sliders on a single page?
+
+- Absolutely. With Prime Slider, you can use as many widgets as you want inside a single webpage and that will not affect your website and never conflict with any elements.
+
+### How to include a slider in a post or a page?
+
+- Just open the target page using Elementor page builder and drag-n-drop the Prime Slider modules/widgets inside the page or post.
+
+### How to include Prime Slider into header.php?
+
+- There is no need to do that. Each Prime Slider widget comes with a built-in customizable header, so you can use the slider to completely design your entire webpage with nothing else but Prime Slider.
+
+### Does Prime Slider support SSL?
+
+- Yes, Prime Slider supports both http:// and https:// protocols.
+
 
 == Screenshots ==
 

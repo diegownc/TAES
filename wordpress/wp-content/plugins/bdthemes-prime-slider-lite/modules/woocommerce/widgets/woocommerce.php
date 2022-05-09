@@ -1641,13 +1641,13 @@ class Woocommerce extends Widget_Base {
 			]
 		);
 
-		$this->add_group_control(
+		$this->add_group_control (
 			Group_Control_Background::get_type(),
 			[
 				'name' 		=> 'arrows_hover_background',
 				'label' 	=> __('Background', 'bdthemes-prime-slider'),
 				'types' 	=> ['classic', 'gradient'],
-				'selector' 	=> '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next:hover, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous:hover',
+				'selector' 	=> '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next::before, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous::before',
 				'condition' => [
 					'show_navigation_arrows' => ['yes'],
 				],

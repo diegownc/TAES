@@ -727,7 +727,7 @@
 				Group_Control_Background::get_type(),
 				[
 					'name'     => 'arrows_hover_background',
-					'selector' => '{{WRAPPER}} .bdt-vertex-slider .bdt-navigation-wrap .bdt-navigation-next:hover, {{WRAPPER}} .bdt-vertex-slider .bdt-navigation-wrap .bdt-navigation-prev:hover',
+					'selector' => '{{WRAPPER}} .bdt-vertex-slider .bdt-navigation-wrap .bdt-navigation-next::before, {{WRAPPER}} .bdt-vertex-slider .bdt-navigation-wrap .bdt-navigation-prev::before',
 				]
 			);
 			

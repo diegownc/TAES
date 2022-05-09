@@ -1164,6 +1164,18 @@ class Woocircle extends Widget_Base
 			]
 		);
 
+		$this->add_responsive_control(
+			'button_margin',
+			[
+				'label'      => __('margin', 'bdthemes-prime-slider'),
+				'type'       => Controls_Manager::DIMENSIONS,
+				'size_units' => ['px', 'em', '%'],
+				'selectors'  => [
+					'{{WRAPPER}} .bdt-elastic-slider .bdt-elastic-button--buy .cart' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				],
+			]
+		);
+
 		$this->add_group_control(
 			Group_Control_Box_Shadow::get_type(),
 			[

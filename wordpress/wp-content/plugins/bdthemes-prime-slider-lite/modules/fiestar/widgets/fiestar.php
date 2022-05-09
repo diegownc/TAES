@@ -687,17 +687,19 @@
 					],
 				]
 			);
-			
-			$this->add_responsive_control(
-				'arrows_size',
+
+            $this->add_responsive_control(
+                'arrow_padding',
                 [
-					'label'     => esc_html__( 'Size', 'bdthemes-prime-slider' ),
-					'type'      => Controls_Manager::SLIDER,
-					'selectors' => [
-						'{{WRAPPER}} .bdt-fiestar-slider .bdt-navigation-wrap .bdt-navigation-next, {{WRAPPER}} .bdt-fiestar-slider .bdt-navigation-wrap .bdt-navigation-prev' => 'width: {{SIZE}}{{UNIT}}; height: {{SIZE}}{{UNIT}}; line-height: {{SIZE}}{{UNIT}};',
-					],
-				]
-			);
+                    'label' 	 => __('Padding', 'bdthemes-prime-slider'),
+                    'type' 		 => Controls_Manager::DIMENSIONS,
+                    'size_units' => ['px', 'em', '%'],
+                    'selectors'  => [
+                        '{{WRAPPER}} .bdt-fiestar-slider .bdt-navigation-wrap .bdt-navigation-next,
+                         {{WRAPPER}} .bdt-fiestar-slider .bdt-navigation-wrap .bdt-navigation-prev' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    ],
+                ]
+            );
 			
 			$this->add_responsive_control(
 				'arrows_horizontal_offset',
@@ -752,7 +754,8 @@
 				Group_Control_Background::get_type(),
 				[
 					'name'     => 'arrows_hover_background',
-					'selector' => '{{WRAPPER}} .bdt-fiestar-slider .bdt-navigation-wrap .bdt-navigation-next:hover, {{WRAPPER}} .bdt-fiestar-slider .bdt-navigation-wrap .bdt-navigation-prev:hover',
+					'selector' => '{{WRAPPER}} .bdt-fiestar-slider .bdt-navigation-wrap .bdt-navigation-next::before,
+                     {{WRAPPER}} .bdt-fiestar-slider .bdt-navigation-wrap .bdt-navigation-prev::before',
 				]
 			);
 			

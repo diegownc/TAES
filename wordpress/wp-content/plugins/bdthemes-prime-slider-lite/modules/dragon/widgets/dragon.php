@@ -7,6 +7,7 @@ use Elementor\Controls_Manager;
 use Elementor\Group_Control_Typography;
 use Elementor\Group_Control_Image_Size;
 use Elementor\Group_Control_Css_Filter;
+use Elementor\Group_Control_Text_Stroke;
 use PrimeSlider\Utils;
 use Elementor\Repeater;
 
@@ -514,7 +515,7 @@ class dragon extends Widget_Base {
 		$this->add_control(
 			'show_text_stroke',
 			[
-				'label'   => esc_html__('Text Stroke', 'bdthemes-prime-slider') . BDTPS_NC,
+				'label'   => esc_html__('Text Stroke (Deprecated)', 'bdthemes-prime-slider') . BDTPS_NC,
 				'type'    => Controls_Manager::SWITCHER,
 				'prefix_class' => 'bdt-text-stroke--',
 				'condition' => [
@@ -529,7 +530,7 @@ class dragon extends Widget_Base {
 				'label'     => esc_html__('Color', 'bdthemes-prime-slider'),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-content .bdt-main-title .bdt-title-tag' => 'color: {{VALUE}}; -webkit-text-stroke-color: {{VALUE}};',
+					'{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-content .bdt-main-title .bdt-title-tag, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-content .bdt-main-title .bdt-title-tag a' => 'color: {{VALUE}}; -webkit-text-stroke-color: {{VALUE}};',
 				],
 				'condition' => [
 					'show_title' => ['yes'],
@@ -559,6 +560,15 @@ class dragon extends Widget_Base {
 				],
 			]
 		);
+
+		$this->add_group_control(
+            Group_Control_Text_Stroke::get_type(),
+            [
+                'name' => 'title_text_stroke',
+				'label'    => esc_html__('Text Stroke', 'bdthemes-prime-slider') . BDTPS_NC,
+                'selector' => '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-content .bdt-main-title .bdt-title-tag',
+            ]
+        );
 
 		$this->add_responsive_control(
 			'prime_slider_title_spacing',
@@ -782,7 +792,7 @@ class dragon extends Widget_Base {
 				'type' 	 	=> Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .bdt-prime-slider-dragon .bdt-ps-dragon-button .bdt-ps-button-arrow, {{WRAPPER}} .bdt-prime-slider-dragon .bdt-ps-dragon-button .bdt-ps-button-small-circle' => 'background-color: {{VALUE}};',
-					'{{WRAPPER}} .bdt-prime-slider-dragon .bdt-ps-dragon-button .bdt-ps-button-arrow:after' => 'border-left-color: {{VALUE}};',
+					'{{WRAPPER}} .bdt-prime-slider-dragon .bdt-ps-dragon-button .bdt-ps-button-arrow:after' => is_rtl() ? 'border-right-color: {{VALUE}};' : 'border-left-color: {{VALUE}};',
 				],
 			]
 		);

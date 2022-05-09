@@ -125,7 +125,7 @@ class Pacific extends Widget_Base
 				],
 				'range' => [
 					'px' => [
-						'min' => 0,
+						'min' => 1,
 						'max' => 100,
 					],
 				],
@@ -1073,7 +1073,7 @@ class Pacific extends Widget_Base
 		$this->add_control(
 			'modal_cross_color',
 			[
-				'label'     => esc_html__('Cross Color', 'bdthemes-prime-slider'),
+				'label'     => esc_html__('Cross Icon Color', 'bdthemes-prime-slider'),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'.bdt-pacific-{{ID}}.bdt-modal-dialog .bdt-modal-close-full' => 'color: {{VALUE}};',
@@ -1084,7 +1084,7 @@ class Pacific extends Widget_Base
 		$this->add_control(
 			'modal_cross_color_hover',
 			[
-				'label'     => esc_html__('Cross Color Hover', 'bdthemes-prime-slider'),
+				'label'     => esc_html__('Cross Icon Hover Color', 'bdthemes-prime-slider'),
 				'type'      => Controls_Manager::COLOR,
 				'selectors' => [
 					'.bdt-pacific-{{ID}}.bdt-modal-dialog .bdt-modal-close-full:hover' => 'color: {{VALUE}};',

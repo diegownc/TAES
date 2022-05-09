@@ -139,7 +139,7 @@
 
         <p><?php esc_html_e('Maybe we’re missing something you can’t live without.', 'elementskit-lite'); ?></p>
         <div class="ekit-admin-right-content--button">
-            <a target="_blank" href="https://wpmet.com/feature-request" class="attr-btn attr-btn-primary ekit-admin-right-content--link"><i class="fa fa-check-circle"></i><?php esc_html_e('Feature a request', 'elementskit-lite'); ?></a>
+            <a target="_blank" href="https://wpmet.com/plugin/elementskit/roadmaps/#ideas" class="attr-btn attr-btn-primary ekit-admin-right-content--link"><i class="fa fa-check-circle"></i><?php esc_html_e('Feature a request', 'elementskit-lite'); ?></a>
         </div>
     </div>
 </div>

@@ -192,45 +192,6 @@ $pro_active = (in_array('elementskit/elementskit.php', apply_filters('active_plu
             </div>
 
             <!-------------------
-			   trustpilot
-		   -------------------->
-
-            <!-- <div class="attr-panel ekit_accordion_card">
-                <div
-                        class="<?php //echo $this->utils->is_widget_active_class('trustpilot', $pro_active); ?>"
-                        data-target="#elementskit_go_pro_modal"
-                        data-attr-toggle="modal"
-                        role="tab" id="trustpilot_data_headeing">
-
-                    <a class="attr-btn attr-collapsed" role="button" data-attr-toggle="collapse"
-                       data-parent="#accordion"
-                       href="#trustpilot_data_control" aria-expanded="false" aria-controls="trustpilot_data_control">
-						<?php //esc_html_e('Trustpilot Settings', 'elementskit-lite'); ?>
-                    </a>
-                </div>
-
-                <div id="trustpilot_data_control" class="attr-panel-collapse attr-collapse" role="tabpanel"
-                     aria-labelledby="trustpilot_data_headeing">
-                    <div class="attr-panel-body">
-                        <div class="ekit-admin-user-data-separator"></div>
-
-						<?php
-						// $this->utils->input(
-						// 	[
-						// 		'type'        => 'text',
-						// 		'name'        => 'user_data[trustpilot][page]',
-						// 		'label'       => esc_html__('Trustpilot Page', 'elementskit-lite'),
-						// 		'placeholder' => 'mysite.com',
-						// 		'value'       => (!isset($user_data['trustpilot']['page'])) ? '' : ($user_data['trustpilot']['page']),
-						// 	]
-						// );
-						?>
-                    </div>
-                </div>
-
-            </div> -->
-
-            <!-------------------
                 yelp
             -------------------->
             <div class="attr-panel ekit_accordion_card">

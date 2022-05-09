@@ -1152,8 +1152,8 @@
             $this->add_group_control(
 				Group_Control_Background::get_type(),
 				[
-					'name'     => 'arrows_hover_background',
-					'selector' => '{{WRAPPER}} .bdt-rubix-slider .bdt-main-slider .bdt-read-more a:hover i',
+					'name'     => 'read_more_icon_hover_background',
+					'selector' => '{{WRAPPER}} .bdt-rubix-slider .bdt-main-slider .bdt-read-more a i:after',
 				]
 			);
 			

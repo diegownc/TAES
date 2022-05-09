@@ -4,7 +4,7 @@ Contributors: Ataurr, wpmet, emranio, easin55474
 Tags: elementor addons, mega menu builder, header footer builder, elementor widgets, Accordion tab, elementor modules, page builder addons, elementor addon, elementor widget, addons
 Requires at least: 5.0
 Tested up to: 5.9
-Stable tag: 2.5.5
+Stable tag: 2.5.7
 Requires PHP: 7.0
 License: GPLv3 or later
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -412,6 +412,20 @@ Do you want to integrate the Facebook Messenger chat-head to any of your web pag
 Start using the Facebook Messenger module chat-head by providing the Page ID, choosing any color, logged in user greeting, and logged out user greeting. You can also show your visitors a dialogue box if you wish to. However, make sure that your domain is whitelisted on the page you’re linking to.
 
 == Changelog ==
+Version: 2.5.7 (2022-04-25)
+Fixed: Advance Tab widget issue.
+Fixed: Advance Accordion widget issue.
+Fixed: Advance Toggle widget issue.
+Fixed: Advance Slider widget issue.
+
+Version: 2.5.6 (2022-04-18)
+Added: Language Files.
+Added: WPMl support for Elementskit template specially for Header & Footer Builder.  
+Fixed: Escaping issues.
+Fixed: Theme support issue.
+Fixed: One page scroll issue. 
+Tweaked: Change some links.
+
 Version: 2.5.5 (2022-03-24)
 Added: Whatsapp widget.
 Fixed: Elementor responsive control devices compatibility issue.
@@ -676,8 +690,7 @@ Version: 2.0.6
 Fix: PHP warning
 
 Version: 2.0.5
-New: New controls added in Dribbble, Behance and Pinterest Feed
-New: New controls added in Yelp and trustpilot Review
+New: New controls added in Dribbble, Behance and Pinterest Feed 
 New: New Pro widget Google Map added
 Fix: minor css issues fixed
 Fix: nav menu sub-menu indicator and hover background color issue

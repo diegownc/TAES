@@ -65,8 +65,7 @@ class Plugin{
         // Register ElementsKit supported widgets to Elementor from 3rd party plugins.
         add_action( 'elementor/widgets/register', [$this, 'register_widgets'], 1050);
 
-        // Register wpml compability module
-        Compatibility\Wpml\Init::instance();
+        // Compatibility issues
         Compatibility\Conflicts\Init::instance();
 
         $is_pro_active = in_array('elementskit/elementskit.php', apply_filters('active_plugins', get_option('active_plugins')));

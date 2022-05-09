@@ -2110,7 +2110,7 @@ class Isolate extends Widget_Base
             'name'      => 'slice_skin_button_hover_background_color',
             'label'     => __( 'Background', 'bdthemes-prime-slider' ),
             'types'     => [ 'gradient' ],
-            'selector'  => '{{WRAPPER}} .bdt-prime-slider .bdt-slide-btn:hover',
+            'selector'  => '{{WRAPPER}} .bdt-prime-slider-skin-slice .bdt-slide-btn::before',
             'condition' => [
             '_skin' => 'slice',
         ],
@@ -2447,7 +2447,7 @@ class Isolate extends Widget_Base
             'label'     => esc_html__( 'Background', 'bdthemes-prime-slider' ) . BDTPS_NC,
             'type'      => Controls_Manager::COLOR,
             'selectors' => [
-            '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-social-icon a:hover' => 'background: {{VALUE}};',
+            '{{WRAPPER}} .bdt-prime-slider .bdt-scroll-icon::before' => 'background: {{VALUE}};',
         ],
             'condition' => [
             '_skin' => '',
@@ -2641,9 +2641,25 @@ class Isolate extends Widget_Base
             'name'      => 'arrows_hover_background',
             'label'     => __( 'Background', 'bdthemes-prime-slider' ),
             'types'     => [ 'classic', 'gradient' ],
-            'selector'  => '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next:hover, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous:hover',
+            'selector'  => '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next:before, {{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous:before',
             'condition' => [
             'show_navigation_arrows' => [ 'yes' ],
+        ],
+            'condition' => [
+            '_skin!' => 'locate',
+        ],
+        ] );
+        $this->add_group_control( Group_Control_Background::get_type(), [
+            'name'      => 'locate_arrows_hover_background',
+            'label'     => __( 'Background', 'bdthemes-prime-slider' ),
+            'types'     => [ 'classic', 'gradient' ],
+            'selector'  => '{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-next:hover, 
+				{{WRAPPER}} .bdt-prime-slider .bdt-prime-slider-previous:hover',
+            'condition' => [
+            'show_navigation_arrows' => [ 'yes' ],
+        ],
+            'condition' => [
+            '_skin' => 'locate',
         ],
         ] );
         $this->add_control( 'arrows_hover_border_color', [

@@ -4,9 +4,9 @@ Contributors: rwattner, dgovea
 Donate Link: https://www.paypal.me/StickyHeaderEffects
 Tags: Elementor, Elementor Page Builder, Elements, Elementor Add-ons, Add-ons, Page Builder, Widgets, Briefcasewp
 Requires at least: 4.9.0
-Tested up to: 5.8
+Tested up to: 5.9
 Requires PHP: 5.4
-Stable tag: 1.4.7
+Stable tag: 1.4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,6 +91,9 @@ Sticky Header Options for Elementor is light-weight and you can also use only th
 
 == Changelog ==
 
+= 1.4.8 =
+Maintenance: Wordpress 5.8 compatibility update
+
 = 1.4.7 =
 Fixed: Misc Bugs
 
@@ -170,6 +173,9 @@ Fixed: Gap above header bug
 - Initial stable release
 
 == Upgrade Notice ==
+
+= 1.4.8 =
+Maintenance: Wordpress 5.8 compatibility update
 
 = 1.4.7 =
 Fixed: Misc Bugs

@@ -919,7 +919,7 @@ class Sequester extends Widget_Base {
 				'label' 	=> __('Background', 'bdthemes-prime-slider') . BDTPS_NC,
 				'type' 		=> Controls_Manager::COLOR,
 				'selectors' => [
-					'{{WRAPPER}} .bdt-prime-slider-sequester .bdt-slide-btn:hover .bdt-slide-btn-icon' => 'background-color: {{VALUE}};',
+					'{{WRAPPER}} .bdt-prime-slider-sequester .bdt-slide-btn .bdt-slide-btn-icon::after' => 'background-color: {{VALUE}};',
 				],
 			]
 		);

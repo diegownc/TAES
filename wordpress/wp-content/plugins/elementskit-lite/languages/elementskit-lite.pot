@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the ElementsKit Lite package.
 msgid ""
 msgstr ""
-"Project-Id-Version: ElementsKit Lite 2.5.5\n"
+"Project-Id-Version: ElementsKit Lite 2.5.7\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/elementskit-lite\n"
-"POT-Creation-Date: 2022-03-27 11:41:22+00:00\n"
+"POT-Creation-Date: 2022-04-28 05:50:45+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -39,390 +39,6 @@ msgstr ""
 
 #: widgets/blog-posts/blog-posts.php:149
 msgid "6"
-msgstr ""
-
-#: compatibility/wpml/init.php:139
-msgid "Label (Button)"
-msgstr ""
-
-#: compatibility/wpml/init.php:150
-msgid "Title (Heading)"
-msgstr ""
-
-#: compatibility/wpml/init.php:155
-msgid "Sub Title (Heading)"
-msgstr ""
-
-#: compatibility/wpml/init.php:160
-msgid "Description (Heading)"
-msgstr ""
-
-#: compatibility/wpml/init.php:171
-msgid "Title (Icon Box)"
-msgstr ""
-
-#: compatibility/wpml/init.php:176
-msgid "Content (Icon Box)"
-msgstr ""
-
-#: compatibility/wpml/init.php:181
-msgid "Button Label (Icon Box)"
-msgstr ""
-
-#: compatibility/wpml/init.php:186
-msgid "Badge Text (Icon Box)"
-msgstr ""
-
-#: compatibility/wpml/init.php:197
-msgid "Title (Image Box)"
-msgstr ""
-
-#: compatibility/wpml/init.php:202
-msgid "Description (Image Box)"
-msgstr ""
-
-#: compatibility/wpml/init.php:207
-msgid "Button Label (Image Box)"
-msgstr ""
-
-#: compatibility/wpml/init.php:218
-msgid "Weeks (Countdown Timer)"
-msgstr ""
-
-#: compatibility/wpml/init.php:223
-msgid "Days (Countdown Timer)"
-msgstr ""
-
-#: compatibility/wpml/init.php:228
-msgid "Hours (Countdown Timer)"
-msgstr ""
-
-#: compatibility/wpml/init.php:233
-msgid "Minutes (Countdown Timer)"
-msgstr ""
-
-#: compatibility/wpml/init.php:238
-msgid "Seconds (Countdown Timer)"
-msgstr ""
-
-#: compatibility/wpml/init.php:243
-msgid "On Expiry Title (Countdown Timer)"
-msgstr ""
-
-#: compatibility/wpml/init.php:248
-msgid "On Expiry Content (Countdown Timer)"
-msgstr ""
-
-#: compatibility/wpml/init.php:264
-msgid "Number Suffix (Funfact)"
-msgstr ""
-
-#: compatibility/wpml/init.php:269
-msgid "Title (Funfact)"
-msgstr ""
-
-#: compatibility/wpml/init.php:274
-msgid "Super (Funfact)"
-msgstr ""
-
-#: compatibility/wpml/init.php:285
-msgid "Before Label (Image Comparison)"
-msgstr ""
-
-#: compatibility/wpml/init.php:290
-msgid "After Label (Image Comparison)"
-msgstr ""
-
-#: compatibility/wpml/init.php:306
-msgid "Table Title (Pricing Table)"
-msgstr ""
-
-#: compatibility/wpml/init.php:311
-msgid "Table Subtitle (Pricing Table)"
-msgstr ""
-
-#: compatibility/wpml/init.php:316
-msgid "Currency (Pricing Table)"
-msgstr ""
-
-#: compatibility/wpml/init.php:321
-msgid "Price (Pricing Table)"
-msgstr ""
-
-#: compatibility/wpml/init.php:326
-msgid "Duration (Pricing Table)"
-msgstr ""
-
-#: compatibility/wpml/init.php:331
-msgid "Table Content (Pricing Table)"
-msgstr ""
-
-#: compatibility/wpml/init.php:336
-msgid "Button Label (Pricing Table)"
-msgstr ""
-
-#: compatibility/wpml/init.php:348
-msgid "Member Name (Team)"
-msgstr ""
-
-#: compatibility/wpml/init.php:353
-msgid "Member Position (Team)"
-msgstr ""
-
-#: compatibility/wpml/init.php:358
-msgid "Short Description (Team)"
-msgstr ""
-
-#: compatibility/wpml/init.php:363
-msgid "Popup Description (Team)"
-msgstr ""
-
-#: compatibility/wpml/init.php:368
-msgid "Phone (Team)"
-msgstr ""
-
-#: compatibility/wpml/init.php:373
-msgid "Email (Team)"
-msgstr ""
-
-#: compatibility/wpml/init.php:389
-msgid "Title (Progress Bar)"
-msgstr ""
-
-#: compatibility/wpml/init.php:400
-msgid "First Name (Mail Chimp)"
-msgstr ""
-
-#: compatibility/wpml/init.php:405 compatibility/wpml/init.php:415
-msgid "First Name Placeholder (Mail Chimp)"
-msgstr ""
-
-#: compatibility/wpml/init.php:410
-msgid "Last Name (Mail Chimp)"
-msgstr ""
-
-#: compatibility/wpml/init.php:420
-msgid "Phone (Mail Chimp)"
-msgstr ""
-
-#: compatibility/wpml/init.php:425
-msgid "Phone Placeholder (Mail Chimp)"
-msgstr ""
-
-#: compatibility/wpml/init.php:430
-msgid "Email (Mail Chimp)"
-msgstr ""
-
-#: compatibility/wpml/init.php:435
-msgid "Email Placeholder (Mail Chimp)"
-msgstr ""
-
-#: compatibility/wpml/init.php:440
-msgid "Submit Button Text (Mail Chimp)"
-msgstr ""
-
-#: compatibility/wpml/init.php:445
-msgid "Success Message (Mail Chimp)"
-msgstr ""
-
-#: compatibility/wpml/init.php:456
-msgid "Title (Pie Chart)"
-msgstr ""
-
-#: compatibility/wpml/init.php:461
-msgid "Description (Pie Chart)"
-msgstr ""
-
-#: compatibility/wpml/init.php:477
-msgid "Button Title (Video)"
-msgstr ""
-
-#: compatibility/wpml/init.php:493
-msgid "Content (Drop Caps)"
-msgstr ""
-
-#: compatibility/wpml/init.php:524
-msgid "Title (Motion Text)"
-msgstr ""
-
-#: compatibility/wpml/init.php:535
-msgid "Label (Twitter)"
-msgstr ""
-
-#: compatibility/wpml/init.php:546
-msgid "Follow Button Text (Instagram Feed)"
-msgstr ""
-
-#: compatibility/wpml/init.php:557
-msgid "\"All\" Filter Label (Gallery)"
-msgstr ""
-
-#: compatibility/wpml/init.php:569
-msgid "Title (Chart)"
-msgstr ""
-
-#: compatibility/wpml/init.php:581
-msgid "Prev Text (Table)"
-msgstr ""
-
-#: compatibility/wpml/init.php:586
-msgid "Next Text (Table)"
-msgstr ""
-
-#: compatibility/wpml/init.php:603
-msgid "Middle Text (Dual Button)"
-msgstr ""
-
-#: compatibility/wpml/init.php:608
-msgid "Button One Text (Dual Button)"
-msgstr ""
-
-#: compatibility/wpml/init.php:613
-msgid "Button Two Text (Dual Button)"
-msgstr ""
-
-#: compatibility/wpml/init.php:624
-msgid "Label (Creative Button)"
-msgstr ""
-
-#: compatibility/wpml/init.php:655
-msgid "Placeholder Text (Header Search)"
-msgstr ""
-
-#: compatibility/wpml/widgets/accordion.php:52
-msgid "Title (Accordion)"
-msgstr ""
-
-#: compatibility/wpml/widgets/accordion.php:56
-msgid "Description (Accordion)"
-msgstr ""
-
-#: compatibility/wpml/widgets/advanced-accordion.php:51
-msgid "Title (Advanced Accordion)"
-msgstr ""
-
-#: compatibility/wpml/widgets/advanced-tab.php:52
-msgid "Title (Advanced Tab)"
-msgstr ""
-
-#: compatibility/wpml/widgets/advanced-tab.php:56
-msgid "Sub-Title (Advanced Tab)"
-msgstr ""
-
-#: compatibility/wpml/widgets/business-hours.php:52
-msgid "Day (Business Hours)"
-msgstr ""
-
-#: compatibility/wpml/widgets/business-hours.php:56
-msgid "Time (Business Hours)"
-msgstr ""
-
-#: compatibility/wpml/widgets/cat-list.php:51
-msgid "Test (Category List)"
-msgstr ""
-
-#: compatibility/wpml/widgets/chart.php:51
-msgid "Name (Chart)"
-msgstr ""
-
-#: compatibility/wpml/widgets/faq.php:52
-msgid "Title (FAQ)"
-msgstr ""
-
-#: compatibility/wpml/widgets/faq.php:56
-msgid "Content (FAQ)"
-msgstr ""
-
-#: compatibility/wpml/widgets/gallery.php:51
-msgid "Filter Label (Gallery)"
-msgstr ""
-
-#: compatibility/wpml/widgets/header-info.php:51
-msgid "Text (Header Info)"
-msgstr ""
-
-#: compatibility/wpml/widgets/hotspot.php:52
-msgid "Title (Hotspot)"
-msgstr ""
-
-#: compatibility/wpml/widgets/hotspot.php:56
-msgid "Address (Hotspot)"
-msgstr ""
-
-#: compatibility/wpml/widgets/image-accordion.php:52
-msgid "Title (Image Accordion)"
-msgstr ""
-
-#: compatibility/wpml/widgets/image-accordion.php:56
-msgid "Button Label (Image Accordion)"
-msgstr ""
-
-#: compatibility/wpml/widgets/page-list.php:52
-msgid "Title (Page List)"
-msgstr ""
-
-#: compatibility/wpml/widgets/page-list.php:56
-msgid "Sub-Title (Page List)"
-msgstr ""
-
-#: compatibility/wpml/widgets/post-list.php:51
-msgid "Title (Post List)"
-msgstr ""
-
-#: compatibility/wpml/widgets/pricing.php:51
-msgid "List text (Pricing Table)"
-msgstr ""
-
-#: compatibility/wpml/widgets/social-share.php:51
-msgid "Label (Social Share)"
-msgstr ""
-
-#: compatibility/wpml/widgets/social.php:51
-msgid "Label (Social Media)"
-msgstr ""
-
-#: compatibility/wpml/widgets/tab.php:52
-msgid "Title (Tab)"
-msgstr ""
-
-#: compatibility/wpml/widgets/tab.php:56
-msgid "Content (Tab)"
-msgstr ""
-
-#: compatibility/wpml/widgets/table.php:51
-msgid "Text (Table)"
-msgstr ""
-
-#: compatibility/wpml/widgets/testimonial.php:53
-msgid "Client Name (Testimonial)"
-msgstr ""
-
-#: compatibility/wpml/widgets/testimonial.php:57
-msgid "Designation (Testimonial)"
-msgstr ""
-
-#: compatibility/wpml/widgets/testimonial.php:61
-msgid "Testimonial Review (Testimonial)"
-msgstr ""
-
-#: compatibility/wpml/widgets/timeline.php:55
-msgid "Sub Title (Timeline)"
-msgstr ""
-
-#: compatibility/wpml/widgets/timeline.php:59
-msgid "Title (Timeline)"
-msgstr ""
-
-#: compatibility/wpml/widgets/timeline.php:63
-msgid "Description (Timeline)"
-msgstr ""
-
-#: compatibility/wpml/widgets/timeline.php:67
-msgid "Date (Timeline)"
-msgstr ""
-
-#: compatibility/wpml/widgets/timeline.php:71
-msgid "Address (Timeline)"
 msgstr ""
 
 #: elementskit-lite.php:374
@@ -499,7 +115,7 @@ msgstr ""
 msgid "Install Now"
 msgstr ""
 
-#: libs/framework/controls/settings/switch.php:50
+#: libs/framework/controls/settings/switch.php:49
 msgid "View Demo"
 msgstr ""
 
@@ -961,15 +577,15 @@ msgstr ""
 
 #: libs/framework/views/settings-sections/usersettings.php:102
 #: libs/framework/views/settings-sections/usersettings.php:179
-#: libs/framework/views/settings-sections/usersettings.php:400
-#: libs/framework/views/settings-sections/usersettings.php:540
+#: libs/framework/views/settings-sections/usersettings.php:361
+#: libs/framework/views/settings-sections/usersettings.php:501
 msgid "Clear Cache"
 msgstr ""
 
 #: libs/framework/views/settings-sections/usersettings.php:108
 #: libs/framework/views/settings-sections/usersettings.php:152
-#: libs/framework/views/settings-sections/usersettings.php:393
-#: libs/framework/views/settings-sections/usersettings.php:546
+#: libs/framework/views/settings-sections/usersettings.php:354
+#: libs/framework/views/settings-sections/usersettings.php:507
 msgid "Get access token"
 msgstr ""
 
@@ -978,7 +594,7 @@ msgid "Facebook page review"
 msgstr ""
 
 #: libs/framework/views/settings-sections/usersettings.php:144
-#: libs/framework/views/settings-sections/usersettings.php:294
+#: libs/framework/views/settings-sections/usersettings.php:255
 msgid "Page ID"
 msgstr ""
 
@@ -990,19 +606,19 @@ msgstr ""
 msgid "Page Token"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:246
+#: libs/framework/views/settings-sections/usersettings.php:207
 msgid "Yelp Settings"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:260
+#: libs/framework/views/settings-sections/usersettings.php:221
 msgid "Yelp Page"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:282
+#: libs/framework/views/settings-sections/usersettings.php:243
 msgid "Facebook Messenger"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:304
+#: libs/framework/views/settings-sections/usersettings.php:265
 #: widgets/accordion/accordion.php:249 widgets/accordion/accordion.php:341
 #: widgets/accordion/accordion.php:478 widgets/accordion/accordion.php:630
 #: widgets/accordion/accordion.php:692 widgets/back-to-top/back-to-top.php:374
@@ -1115,84 +731,84 @@ msgstr ""
 msgid "Color"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:314
+#: libs/framework/views/settings-sections/usersettings.php:275
 msgid "Logged-in user greeting"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:324
+#: libs/framework/views/settings-sections/usersettings.php:285
 msgid "Logged out user greeting"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:334
+#: libs/framework/views/settings-sections/usersettings.php:295
 msgid "Show Dialog Box"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:363
+#: libs/framework/views/settings-sections/usersettings.php:324
 msgid "Dribbble User Data"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:380
+#: libs/framework/views/settings-sections/usersettings.php:341
 msgid "Access token"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:422
+#: libs/framework/views/settings-sections/usersettings.php:383
 msgid "Twitter User Data"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:434
+#: libs/framework/views/settings-sections/usersettings.php:395
 msgid "Twitter Username"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:444
-#: libs/framework/views/settings-sections/usersettings.php:505
+#: libs/framework/views/settings-sections/usersettings.php:405
+#: libs/framework/views/settings-sections/usersettings.php:466
 msgid "Access Token"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:454
+#: libs/framework/views/settings-sections/usersettings.php:415
 msgid "Get Access Token"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:474
+#: libs/framework/views/settings-sections/usersettings.php:435
 msgid "Instragram User Data"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:495
+#: libs/framework/views/settings-sections/usersettings.php:456
 msgid "User ID"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:515
+#: libs/framework/views/settings-sections/usersettings.php:476
 msgid "Token expires time"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:525
+#: libs/framework/views/settings-sections/usersettings.php:486
 msgid "Token generation date"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:528
+#: libs/framework/views/settings-sections/usersettings.php:489
 msgid "This is need to calculate the remaining time for token"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:567
+#: libs/framework/views/settings-sections/usersettings.php:528
 msgid "Zoom Data"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:579
+#: libs/framework/views/settings-sections/usersettings.php:540
 msgid "Api key"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:588
+#: libs/framework/views/settings-sections/usersettings.php:549
 msgid "Secret Key"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:597
+#: libs/framework/views/settings-sections/usersettings.php:558
 msgid "Check connection"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:619
+#: libs/framework/views/settings-sections/usersettings.php:580
 msgid "Google Map"
 msgstr ""
 
-#: libs/framework/views/settings-sections/usersettings.php:631
+#: libs/framework/views/settings-sections/usersettings.php:592
 msgid "Api Key"
 msgstr ""
 
@@ -1238,11 +854,11 @@ msgid "Loading"
 msgstr ""
 
 #: modules/controls/widget-area-utils.php:24
-#: modules/controls/widget-area-utils.php:69
+#: modules/controls/widget-area-utils.php:81
 msgid "Click here to add content."
 msgstr ""
 
-#: modules/controls/widget-area-utils.php:51
+#: modules/controls/widget-area-utils.php:54
 msgid "Edit"
 msgstr ""
 

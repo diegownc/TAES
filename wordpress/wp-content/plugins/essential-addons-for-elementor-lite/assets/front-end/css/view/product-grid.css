@@ -1506,7 +1506,7 @@
 .eael-product-grid .eael-woo-pagination ul li .page-numbers {
   margin: 0;
   text-decoration: none;
-  color: #000000bd;
+  color: rgba(0, 0, 0, 0.7411764706);
   line-height: 1;
   font-size: 1em;
   font-weight: normal;
@@ -1519,7 +1519,7 @@
 }
 .eael-product-grid .eael-woo-pagination ul li .page-numbers.current, .eael-product-grid .eael-woo-pagination ul li .page-numbers:hover, .eael-product-grid .eael-woo-pagination ul li .page-numbers:focus {
   color: #ffffff;
-  background: #000000bd;
+  background: rgba(0, 0, 0, 0.7411764706);
 }
 .eael-product-grid .woocommerce ul.products .product {
   overflow-y: auto;

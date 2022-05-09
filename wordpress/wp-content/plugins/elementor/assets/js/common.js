@@ -1,4 +1,4 @@
-/*! elementor - v3.6.2 - 04-04-2022 */
+/*! elementor - v3.6.5 - 27-04-2022 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -3192,9 +3192,9 @@ function getUserTimestamp() {
   var date = new Date(),
       timezoneOffset = date.getTimezoneOffset(); // Local time for the user
 
-  var UTCTimestamp = new Date(date.getTime() - timezoneOffset * 60000).toISOString(); // Remove the milliseconds and Z suffix from the string.
+  var UTCTimestamp = new Date(date.getTime() - timezoneOffset * 60000).toISOString(); // Remove the Z suffix from the string.
 
-  UTCTimestamp = UTCTimestamp.slice(0, UTCTimestamp.length - 5); // Create the offset string in the format `+HH:00` (or minus (-) prefix for negative offset instead of plus)
+  UTCTimestamp = UTCTimestamp.slice(0, -1); // Create the offset string in the format `+HH:00` (or minus (-) prefix for negative offset instead of plus)
 
   var timezoneOffsetInHours = timezoneOffset / 60,
       // Negative offsets include a '-' sign in the getTimezoneOffset value, positive values need a '+' prefix (ISO8601).

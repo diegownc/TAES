@@ -426,15 +426,7 @@ class Widget_List extends \ElementsKit_Lite\Core\Config_List{
 				'package' => 'pro-disabled',
 				'widget-category' => 'review-widgets' // Review Widgets
 			],
-
-	
-			// 'trustpilot' => [
-			// 	'slug'    => 'trustpilot',
-			// 	'title'   => 'Trustpilot',
-			// 	'package' => 'pro-disabled',
-			// 	'widget-category' => 'review-widgets' // Review Widgets
-			// ],
-	
+ 
 			'yelp' => [
 				'slug'    => 'yelp',
 				'title'   => 'Yelp',
