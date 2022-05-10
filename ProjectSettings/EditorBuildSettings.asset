@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/PicoPark/Scenes/Level_2.unity
     guid: 17bcfb3a9ba48a1438162cc67aeadd5a
+  - enabled: 1
+    path: Assets/Rythm Run/Scenes/RythmRun.unity
+    guid: 7a6787c57a06e504bbaaf109a10a1974
+  - enabled: 1
+    path: Assets/Extreme Football/Scenes/ExtremeFootball.unity
+    guid: 15268c810f09f3d43b53e5f03a0e9c4f
   m_configObjects: {}

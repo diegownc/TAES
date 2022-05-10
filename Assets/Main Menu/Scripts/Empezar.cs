@@ -16,5 +16,13 @@ public class Empezar : MonoBehaviour
         {
             SceneManager.LoadScene("Level_1");
         }
+        else if (textElement.text == "JUEGO2")
+        {
+            SceneManager.LoadScene("ExtremeFootball");
+        }
+        else if (textElement.text == "JUEGO3")
+        {
+            SceneManager.LoadScene("RythmRun");
+        }
     }
 }
