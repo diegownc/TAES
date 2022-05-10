@@ -8,9 +8,16 @@ using UnityEngine.SceneManagement;
 public class Empezar : MonoBehaviour
 {
     public Text textElement;
-    public void Empezar_Juego()
+    
+    void Empezar_Juego()
+    {
+        StartCoroutine(DelayEmpezar_Juego());
+    }
+
+    public IEnumerator DelayEmpezar_Juego()
     {
         textElement.text = PlayerPrefs.GetString("nombreDelJuego");
+        yield return new WaitForSeconds(.5f);
 
         if (textElement.text == "Juego1")
         {

@@ -6,8 +6,14 @@ using UnityEngine.UI;
 
 public class CambiarEscena : MonoBehaviour
 {
-    public void LoadScene(string sceneName)
+    void LoadScene(string sceneName)
     {
+        StartCoroutine(Delay_LoadScene(sceneName));
+    }
+
+    public IEnumerator Delay_LoadScene(string sceneName)
+    {
+        yield return new WaitForSeconds(.3f);
         SceneManager.LoadScene(sceneName);
     }
 }
