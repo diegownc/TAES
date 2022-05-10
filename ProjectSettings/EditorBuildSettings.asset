@@ -6,15 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Main Menu/MainMenu.unity
+    path: Assets/Main Menu/Scenes/MainMenu.unity
     guid: 0f79a1388042ce841b459f20e5f6c302
   - enabled: 1
-    path: Assets/Scenes/Main Menu/PantallaDeCarga.unity
+    path: Assets/Main Menu/Scenes/PantallaDeCarga.unity
     guid: cce979ce27db61c4da884b2065ef133c
   - enabled: 1
-    path: Assets/Scenes/Main Menu/Settings.unity
+    path: Assets/Main Menu/Scenes/Settings.unity
     guid: 6ba36fdbc5fe09e47baeee413325dbee
+  - enabled: 1
+    path: Assets/PicoPark/Scenes/Level_1.unity
+    guid: fdb24c1f6d3215242a27854e525f3f1d
+  - enabled: 1
+    path: Assets/PicoPark/Scenes/Level_2.unity
+    guid: 17bcfb3a9ba48a1438162cc67aeadd5a
   m_configObjects: {}
