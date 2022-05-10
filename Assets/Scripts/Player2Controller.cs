@@ -8,7 +8,7 @@ public class Player2Controller : MonoBehaviour
 
     public float runSpeed2 = 55;
     public float jumpSpeed2 = 70;
-    //public float jumpNotSpeed = 50;
+    public float jumpSpeed2_2 = 50;
     Rigidbody2D rb2d2;
 
     public bool betterJump2 = false;
@@ -17,27 +17,68 @@ public class Player2Controller : MonoBehaviour
 
     public SpriteRenderer spriterederer2;
     public Animator animator2;
+    public BoxCollider2D player2;
 
-    // Start is called before the first frame update
+    public static bool flipX_2;
+    public static bool shot_2;
+
     void Start()
     {
+        spriterederer2 = GetComponent<SpriteRenderer>();
         rb2d2 = GetComponent<Rigidbody2D>();
         gameObject.transform.position = new Vector2(58, -33);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        //DOBLE SALTO
+        if (Input.GetKey("up"))
+        {
+            if (CheckGround2.isGrounded2)
+            {
+                rb2d2.velocity = new Vector2(rb2d2.velocity.x, jumpSpeed2);
+                canJump2_2 = true;
+            }
+            else
+            {
+                if (Input.GetKeyDown("up"))
+                {
+                    if (canJump2_2)
+                    {
+                        animator2.SetBool("Jump2", true);
+                        rb2d2.velocity = new Vector2(rb2d2.velocity.x, jumpSpeed2_2);
+                        canJump2_2 = false;
+                    }
+                }
+            }
+        }
+
+        if (!CheckGround2.isGrounded2)
+        {
+            animator2.SetBool("Jump2", true);
+            animator2.SetBool("Run2", false);
+        }
+        else if (CheckGround2.isGrounded2)
+        {
+            animator2.SetBool("Jump2", false);
+        }
+    }
+
+    void FixedUpdate()
+    {
+        //Movimiento
         if (Input.GetKey("left"))
         {
             rb2d2.velocity = new Vector2(-runSpeed2, rb2d2.velocity.y);
             spriterederer2.flipX = true;
+            flipX_2 = true;
             animator2.SetBool("Run2", true);
         }
         else if (Input.GetKey("right"))
         {
             rb2d2.velocity = new Vector2(runSpeed2, rb2d2.velocity.y);
             spriterederer2.flipX = false;
+            flipX_2 = false;
             animator2.SetBool("Run2", true);
         }
         else
@@ -46,37 +87,22 @@ public class Player2Controller : MonoBehaviour
             animator2.SetBool("Run2", false);
         }
 
-        //DOBLE SALTO
-        if (!CheckGround.isGrounded && Input.GetKeyDown("up") && canJump2_2)
-        {
-            rb2d2.velocity = new Vector2(rb2d2.velocity.x, jumpSpeed2);
-            canJump2_2 = false;
-        }
-
-        if (Input.GetKeyDown("up") && CheckGround.isGrounded)
-        {
-            rb2d2.velocity = new Vector2(rb2d2.velocity.x, jumpSpeed2);
-            canJump2_2 = true;
-        }
-
-        if (!CheckGround.isGrounded)
-        {
-            animator2.SetBool("Jump2", true);
-            animator2.SetBool("Run2", false);
-        }
-        else if (CheckGround.isGrounded)
-        {
-            animator2.SetBool("Jump2", false);
-        }
-
+        //Disparo
         if (Input.GetKey("m"))
         {
             animator2.SetBool("Shot2", true);
+            shot_2 = true;
         }
         else
         {
             animator2.SetBool("Shot2", false);
+            shot_2 = false;
         }
+
+        /**if (rb2d2.velocity.y < 0.1f && rb2d2.velocity.y > -0.1f)
+        {
+            CheckGround2.isGrounded2 = true;
+        }**/
 
         if (betterJump2)
         {

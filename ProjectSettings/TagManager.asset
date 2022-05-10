@@ -6,7 +6,11 @@ TagManager:
   tags:
   - GoalLine1
   - GoalLine2
-  - Floor
+  - FloorPlayer1
+  - FloorPlayer2
+  - ShotPlayer1
+  - ShotPlayer2
+  - Ball
   layers:
   - Default
   - TransparentFX
