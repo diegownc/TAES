@@ -490,7 +490,6 @@ GameObject:
   - component: {fileID: 334841901}
   - component: {fileID: 334841904}
   - component: {fileID: 334841900}
-  - component: {fileID: 334841906}
   - component: {fileID: 334841905}
   m_Layer: 5
   m_Name: IrAtras
@@ -751,20 +750,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &334841906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 334841898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d1eb91e0e982b943b05067761f7efa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audio: {fileID: 334841905}
-  clip: {fileID: 8300000, guid: 768876ef01ca30043a665d0f8f9a5a29, type: 3}
 --- !u!1 &374098808
 GameObject:
   m_ObjectHideFlags: 0

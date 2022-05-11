@@ -19,7 +19,7 @@ public class InsertarJugadores : MonoBehaviour
 
     private void nombreDeLosJuegos()
     {
-        if (nombreDelJuego.text == "Extreme Football")
+        if (nombreDelJuego.text == "Extreme Football" || nombreDelJuego.text == "Pixel Adventure")
         {
             maximoJugadores = 2;
             jugador2.text = "";

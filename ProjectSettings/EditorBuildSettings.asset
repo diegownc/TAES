@@ -12,18 +12,9 @@ EditorBuildSettings:
     path: Assets/Main Menu/Scenes/PantallaDeCarga.unity
     guid: cce979ce27db61c4da884b2065ef133c
   - enabled: 1
-    path: Assets/Main Menu/Scenes/Settings.unity
-    guid: 6ba36fdbc5fe09e47baeee413325dbee
-  - enabled: 1
-    path: Assets/PicoPark/Scenes/Level_1.unity
-    guid: fdb24c1f6d3215242a27854e525f3f1d
-  - enabled: 1
-    path: Assets/PicoPark/Scenes/Level_2.unity
-    guid: 17bcfb3a9ba48a1438162cc67aeadd5a
-  - enabled: 1
-    path: Assets/Rythm Run/Scenes/RythmRun.unity
-    guid: 7a6787c57a06e504bbaaf109a10a1974
+    path: Assets/Rhythm Run/Scenes/Rhythm Run.unity
+    guid: ca4b417ae066c2c4e83dee52fabbe165
   - enabled: 1
     path: Assets/Extreme Football/Scenes/ExtremeFootball.unity
-    guid: 15268c810f09f3d43b53e5f03a0e9c4f
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

@@ -27,9 +27,9 @@ public class Empezar : MonoBehaviour
         {
             SceneManager.LoadScene("ExtremeFootball");
         }
-        else if (textElement.text == "Rythm run")
+        else if (textElement.text == "Rhythm Run")
         {
-            SceneManager.LoadScene("RythmRun");
+            SceneManager.LoadScene("Rhythm Run");
         }
     }
 }
