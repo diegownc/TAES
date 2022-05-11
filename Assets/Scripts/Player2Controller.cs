@@ -17,15 +17,18 @@ public class Player2Controller : MonoBehaviour
 
     public SpriteRenderer spriterederer2;
     public Animator animator2;
-    public BoxCollider2D player2;
+    public Transform posPlayer2;
+    //public BoxCollider2D player2;
 
     public static bool flipX_2;
     public static bool shot_2;
+    public static bool stopJump2;
 
     void Start()
     {
         spriterederer2 = GetComponent<SpriteRenderer>();
         rb2d2 = GetComponent<Rigidbody2D>();
+        posPlayer2 = GetComponent<Transform>();
         gameObject.transform.position = new Vector2(58, -33);
     }
 
@@ -45,7 +48,11 @@ public class Player2Controller : MonoBehaviour
                 {
                     if (canJump2_2)
                     {
-                        animator2.SetBool("Jump2", true);
+                        if (!stopJump2) //Este no hace nada, ver como arreglar o dejar así, al menos no peta.
+                        {
+                            animator2.SetBool("Jump2", true);
+                        }
+
                         rb2d2.velocity = new Vector2(rb2d2.velocity.x, jumpSpeed2_2);
                         canJump2_2 = false;
                     }
@@ -53,14 +60,28 @@ public class Player2Controller : MonoBehaviour
             }
         }
 
-        if (!CheckGround2.isGrounded2)
+        if (!stopJump2)
         {
-            animator2.SetBool("Jump2", true);
-            animator2.SetBool("Run2", false);
+            if (!CheckGround2.isGrounded2)
+            {
+                animator2.SetBool("Jump2", true);
+                animator2.SetBool("Run2", false);
+            }
+            else if (CheckGround2.isGrounded2)
+            {
+                animator2.SetBool("Jump2", false);
+            }
         }
-        else if (CheckGround2.isGrounded2)
+
+        //STOP JUMP
+
+        if (posPlayer2.position.x >= 68)
         {
-            animator2.SetBool("Jump2", false);
+            stopJump2 = true;
+        }
+        else if (posPlayer2.position.x < 68)
+        {
+            stopJump2 = false;
         }
     }
 

@@ -17,16 +17,19 @@ public class Player1Controller : MonoBehaviour
 
     public SpriteRenderer spriterederer;
     public Animator animator;
+    public Transform posPlayer1;
     //public BoxCollider2D player;
 
     public static bool flipX_1;
     public static bool shot_1;
+    public static bool stopJump = false;
     //private float offsetXder1 = -3.8f;
 
     void Start()
     {
         spriterederer = GetComponent<SpriteRenderer>();
         rb2d = GetComponent<Rigidbody2D>();
+        posPlayer1 = GetComponent<Transform>();
         //player = GetComponent<BoxCollider2D>();
         gameObject.transform.position = new Vector2(-58, -33);
     }
@@ -48,7 +51,11 @@ public class Player1Controller : MonoBehaviour
                 {
                     if (canJump2)
                     {
-                        animator.SetBool("Jump", true);
+                        if (!stopJump) //Este no hace nada, ver como arreglar o dejar así, al menos no peta.
+                        {
+                            animator.SetBool("Jump", true);
+                        }
+                        
                         rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed2);
                         canJump2 = false;
                     }
@@ -56,14 +63,28 @@ public class Player1Controller : MonoBehaviour
             }
         }
 
-        if (!CheckGround.isGrounded1)
+        if (!stopJump)
         {
-            animator.SetBool("Jump", true);
-            animator.SetBool("Run", false);
+            if (!CheckGround.isGrounded1)
+            {
+                animator.SetBool("Jump", true);
+                animator.SetBool("Run", false);
+            }
+            else if (CheckGround.isGrounded1)
+            {
+                animator.SetBool("Jump", false);
+            }
         }
-        else if (CheckGround.isGrounded1)
+
+        //STOP JUMP
+
+        if(posPlayer1.position.x <= -68)
         {
-            animator.SetBool("Jump", false);
+            stopJump = true;
+        }
+        else if(posPlayer1.position.x > -68)
+        {
+            stopJump = false;
         }
     }
 

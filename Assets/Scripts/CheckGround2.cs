@@ -30,6 +30,16 @@ public class CheckGround2 : MonoBehaviour
             playerFloor2.size = new Vector2(sizeXder, playerFloor2.size.y);
             playerFloor2.offset = new Vector2(offsetXder, playerFloor2.offset.y);
         }
+
+        //STOP JUMP
+        if (Player2Controller.stopJump2)
+        {
+            playerFloor2.enabled = false;
+        }
+        else if (!Player2Controller.stopJump2)
+        {
+            playerFloor2.enabled = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
