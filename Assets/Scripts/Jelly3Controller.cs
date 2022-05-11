@@ -289,7 +289,7 @@ public class Jelly3Controller : MonoBehaviour
 
                 player2.gameObject.GetComponent<Transform>().position = new Vector3(-250, -300, 0);
                 player1.gameObject.GetComponent<Transform>().position = new Vector3(-350, -300, 0);
-                player4.gameObject.GetComponent<Transform>().position = new Vector3(-50, -310, 0);
+                player4.gameObject.GetComponent<Transform>().position = new Vector3(-50, -310, 1);
                 player5.gameObject.GetComponent<Transform>().position = new Vector3(50, -300, 0);
                 player6.gameObject.GetComponent<Transform>().position = new Vector3(150, -310, 0);
 

@@ -54,7 +54,7 @@ public class Jelly2Controller : MonoBehaviour
 
         gameObject.GetComponent<Transform>().position = new Vector3(-480, 80, 0);
 
-        udp = new UdpClient(8054);
+        udp = new UdpClient(8057);
         thread = new Thread(new ThreadStart(ThreadMethod));
         thread.Start();
         push = false;
@@ -288,7 +288,7 @@ public class Jelly2Controller : MonoBehaviour
 
                 player1.gameObject.GetComponent<Transform>().position = new Vector3(-350, -300, 0);
                 player3.gameObject.GetComponent<Transform>().position = new Vector3(-150, -290, 0);
-                player4.gameObject.GetComponent<Transform>().position = new Vector3(-50, -310, 0);
+                player4.gameObject.GetComponent<Transform>().position = new Vector3(-50, -310, 1);
                 player5.gameObject.GetComponent<Transform>().position = new Vector3(50, -300, 0);
                 player6.gameObject.GetComponent<Transform>().position = new Vector3(150, -310, 0);
 

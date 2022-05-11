@@ -301,6 +301,49 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &84590760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 84590762}
+  - component: {fileID: 84590761}
+  m_Layer: 0
+  m_Name: BDD
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &84590761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84590760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aca5b0fd8cc60846939502bebacdaf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &84590762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84590760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 314.02704, y: 12.626188, z: -19.407825}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &363713728
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,19 +922,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e3f6fe1fe8b0ee428b98246be0bcf07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fondo: {fileID: 0}
-  nota: {fileID: 0}
-  marca: {fileID: 0}
-  malSprite: {fileID: 0}
-  okSprite: {fileID: 0}
-  goodSprite: {fileID: 0}
-  yeahSprite: {fileID: 0}
-  perfectSprite: {fileID: 0}
-  player2: {fileID: 0}
-  player1: {fileID: 0}
-  player4: {fileID: 0}
-  player5: {fileID: 0}
-  player6: {fileID: 0}
+  fondo: {fileID: 1088204475}
+  nota: {fileID: 968782210}
+  marca: {fileID: 1375786016}
+  malSprite: {fileID: 21300000, guid: 37edbe6fdd51a3d40aade641d4490fbc, type: 3}
+  okSprite: {fileID: 21300000, guid: debc3f9eaefe38e4a9b074e12fc716f1, type: 3}
+  goodSprite: {fileID: 21300000, guid: 23bf42edddd318e458c495e8c0e96221, type: 3}
+  yeahSprite: {fileID: 21300000, guid: 5c5aaf129a436df458886f87519cd6f6, type: 3}
+  perfectSprite: {fileID: 21300000, guid: 8e05dc69ecace484a8704d7ff00072d5, type: 3}
+  player2: {fileID: 1466238011}
+  player1: {fileID: 1945423170}
+  player4: {fileID: 1973891449}
+  player5: {fileID: 910657003}
+  player6: {fileID: 879527047}
   veces: 0
   pulsos: 0
   fin: 1
@@ -1131,19 +1174,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2da47037d96b643a109bde63cd9253, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fondo: {fileID: 0}
-  nota: {fileID: 0}
-  marca: {fileID: 0}
-  malSprite: {fileID: 0}
-  okSprite: {fileID: 0}
-  goodSprite: {fileID: 0}
-  yeahSprite: {fileID: 0}
-  perfectSprite: {fileID: 0}
-  player2: {fileID: 0}
-  player3: {fileID: 0}
-  player4: {fileID: 0}
-  player5: {fileID: 0}
-  player1: {fileID: 0}
+  fondo: {fileID: 1088204475}
+  nota: {fileID: 968782210}
+  marca: {fileID: 1699327852}
+  malSprite: {fileID: 21300000, guid: 37edbe6fdd51a3d40aade641d4490fbc, type: 3}
+  okSprite: {fileID: 21300000, guid: debc3f9eaefe38e4a9b074e12fc716f1, type: 3}
+  goodSprite: {fileID: 21300000, guid: 23bf42edddd318e458c495e8c0e96221, type: 3}
+  yeahSprite: {fileID: 21300000, guid: 5c5aaf129a436df458886f87519cd6f6, type: 3}
+  perfectSprite: {fileID: 21300000, guid: 8e05dc69ecace484a8704d7ff00072d5, type: 3}
+  player2: {fileID: 1466238011}
+  player3: {fileID: 712380499}
+  player4: {fileID: 1973891449}
+  player5: {fileID: 910657003}
+  player1: {fileID: 1945423170}
   veces: 0
   pulsos: 0
   fin: 1
@@ -1191,19 +1234,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65df666f37c6f0c42bfd1905ef81d8dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fondo: {fileID: 0}
-  nota: {fileID: 0}
-  marca: {fileID: 0}
-  malSprite: {fileID: 0}
-  okSprite: {fileID: 0}
-  goodSprite: {fileID: 0}
-  yeahSprite: {fileID: 0}
-  perfectSprite: {fileID: 0}
-  player2: {fileID: 0}
-  player3: {fileID: 0}
-  player4: {fileID: 0}
-  player1: {fileID: 0}
-  player6: {fileID: 0}
+  fondo: {fileID: 1088204475}
+  nota: {fileID: 968782210}
+  marca: {fileID: 37620725}
+  malSprite: {fileID: 21300000, guid: 37edbe6fdd51a3d40aade641d4490fbc, type: 3}
+  okSprite: {fileID: 21300000, guid: debc3f9eaefe38e4a9b074e12fc716f1, type: 3}
+  goodSprite: {fileID: 21300000, guid: 23bf42edddd318e458c495e8c0e96221, type: 3}
+  yeahSprite: {fileID: 21300000, guid: 5c5aaf129a436df458886f87519cd6f6, type: 3}
+  perfectSprite: {fileID: 21300000, guid: 8e05dc69ecace484a8704d7ff00072d5, type: 3}
+  player2: {fileID: 1466238011}
+  player3: {fileID: 712380499}
+  player4: {fileID: 1973891449}
+  player1: {fileID: 1945423170}
+  player6: {fileID: 879527047}
   veces: 0
   pulsos: 0
   fin: 1
@@ -1598,7 +1641,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f4ba7a5e8b25ae241a6c94d4d6df858d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1735,19 +1778,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b998e213fa06981458ccc93afb28100a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fondo: {fileID: 0}
-  nota: {fileID: 0}
-  marca: {fileID: 0}
-  malSprite: {fileID: 0}
-  okSprite: {fileID: 0}
-  goodSprite: {fileID: 0}
-  yeahSprite: {fileID: 0}
-  perfectSprite: {fileID: 0}
-  player1: {fileID: 0}
-  player3: {fileID: 0}
-  player4: {fileID: 0}
-  player5: {fileID: 0}
-  player6: {fileID: 0}
+  fondo: {fileID: 1088204475}
+  nota: {fileID: 968782210}
+  marca: {fileID: 743571151}
+  malSprite: {fileID: 21300000, guid: 37edbe6fdd51a3d40aade641d4490fbc, type: 3}
+  okSprite: {fileID: 21300000, guid: debc3f9eaefe38e4a9b074e12fc716f1, type: 3}
+  goodSprite: {fileID: 21300000, guid: 23bf42edddd318e458c495e8c0e96221, type: 3}
+  yeahSprite: {fileID: 21300000, guid: 5c5aaf129a436df458886f87519cd6f6, type: 3}
+  perfectSprite: {fileID: 21300000, guid: 8e05dc69ecace484a8704d7ff00072d5, type: 3}
+  player1: {fileID: 1945423170}
+  player3: {fileID: 712380499}
+  player4: {fileID: 1973891449}
+  player5: {fileID: 910657003}
+  player6: {fileID: 879527047}
   veces: 0
   pulsos: 0
   fin: 1
@@ -1759,7 +1802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466238010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -480, y: 80, z: -1}
+  m_LocalPosition: {x: -480, y: 80, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children:
   - {fileID: 1485132897}
@@ -2155,19 +2198,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c402bc68f5888b94b882f0028d4a6341, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fondo: {fileID: 0}
-  nota: {fileID: 0}
-  marca: {fileID: 0}
-  malSprite: {fileID: 0}
-  okSprite: {fileID: 0}
-  goodSprite: {fileID: 0}
-  yeahSprite: {fileID: 0}
-  perfectSprite: {fileID: 0}
-  player2: {fileID: 0}
-  player3: {fileID: 0}
-  player1: {fileID: 0}
-  player5: {fileID: 0}
-  player6: {fileID: 0}
+  fondo: {fileID: 1088204475}
+  nota: {fileID: 968782210}
+  marca: {fileID: 832740992}
+  malSprite: {fileID: 21300000, guid: 37edbe6fdd51a3d40aade641d4490fbc, type: 3}
+  okSprite: {fileID: 21300000, guid: debc3f9eaefe38e4a9b074e12fc716f1, type: 3}
+  goodSprite: {fileID: 21300000, guid: 23bf42edddd318e458c495e8c0e96221, type: 3}
+  yeahSprite: {fileID: 21300000, guid: 5c5aaf129a436df458886f87519cd6f6, type: 3}
+  perfectSprite: {fileID: 21300000, guid: 8e05dc69ecace484a8704d7ff00072d5, type: 3}
+  player2: {fileID: 1466238011}
+  player3: {fileID: 712380499}
+  player1: {fileID: 1945423170}
+  player5: {fileID: 910657003}
+  player6: {fileID: 879527047}
   veces: 0
   pulsos: 0
   fin: 1

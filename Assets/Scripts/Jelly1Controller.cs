@@ -71,7 +71,7 @@ public class Jelly1Controller : MonoBehaviour
         IPHostEntry ipEntry = Dns.GetHostEntry(Dns.GetHostName());
         IPAddress[] addr = ipEntry.AddressList;
         //ipPC = addr[1].ToString();
-        ipPC = "192.168.1.106";
+        ipPC = "192.168.94.32";
 
 
         Debug.Log(ipPC);
@@ -294,7 +294,7 @@ public class Jelly1Controller : MonoBehaviour
 
                 player2.gameObject.GetComponent<Transform>().position = new Vector3(-250, -300, 0);
                 player3.gameObject.GetComponent<Transform>().position = new Vector3(-150, -290, 0);
-                player4.gameObject.GetComponent<Transform>().position = new Vector3(-50, -310, 0);
+                player4.gameObject.GetComponent<Transform>().position = new Vector3(-50, -310, -1);
                 player5.gameObject.GetComponent<Transform>().position = new Vector3(50, -300, 0);
                 player6.gameObject.GetComponent<Transform>().position = new Vector3(150, -310, 0);
 
