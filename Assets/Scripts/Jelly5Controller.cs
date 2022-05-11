@@ -17,6 +17,7 @@ public class Jelly5Controller : MonoBehaviour
     public Sprite goodSprite;
     public Sprite yeahSprite;
     public Sprite perfectSprite;
+    public ParticulasController particulas;
 
     public Jelly2Controller player2;
     public Jelly3Controller player3;
@@ -40,6 +41,7 @@ public class Jelly5Controller : MonoBehaviour
         
         nota = FindObjectOfType<NotaController>();
         marca = FindObjectOfType<Marca5Controller>();
+       
 
         player2 = FindObjectOfType<Jelly2Controller>();
         player3 = FindObjectOfType<Jelly3Controller>();
@@ -47,7 +49,7 @@ public class Jelly5Controller : MonoBehaviour
         player1 = FindObjectOfType<Jelly1Controller>();
         player6 = FindObjectOfType<Jelly6Controller>();
 
-
+        particulas.gameObject.SetActive(false);
         marca.gameObject.SetActive(false);
 
         if (fondo != null)
@@ -155,7 +157,7 @@ public class Jelly5Controller : MonoBehaviour
             {
                 nota.gameObject.SetActive(false);
                 marca.gameObject.SetActive(false);
-
+                particulas.gameObject.SetActive(true);
                 nota.parar();
                 fondo.ActivateSprite();
                 gameObject.GetComponent<Transform>().position = new Vector3(0, 120, 0);
@@ -293,7 +295,7 @@ public class Jelly5Controller : MonoBehaviour
 
                 player2.gameObject.GetComponent<Transform>().position = new Vector3(-250, -300, 0);
                 player3.gameObject.GetComponent<Transform>().position = new Vector3(-150, -290, 0);
-                player4.gameObject.GetComponent<Transform>().position = new Vector3(-50, -310, 1);
+                player4.gameObject.GetComponent<Transform>().position = new Vector3(-70, -310, 1);
                 player1.gameObject.GetComponent<Transform>().position = new Vector3(-350, -300, 0);
                 player6.gameObject.GetComponent<Transform>().position = new Vector3(150, -310, 0);
 

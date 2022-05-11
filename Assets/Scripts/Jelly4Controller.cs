@@ -17,6 +17,7 @@ public class Jelly4Controller : MonoBehaviour
     public Sprite goodSprite;
     public Sprite yeahSprite;
     public Sprite perfectSprite;
+    public ParticulasController particulas;
 
     public Jelly2Controller player2;
     public Jelly3Controller player3;
@@ -47,7 +48,7 @@ public class Jelly4Controller : MonoBehaviour
         player5 = FindObjectOfType<Jelly5Controller>();
         player6 = FindObjectOfType<Jelly6Controller>();
 
-
+        particulas.gameObject.SetActive(false);
         marca.gameObject.SetActive(false);
 
         if (fondo != null)
@@ -55,7 +56,7 @@ public class Jelly4Controller : MonoBehaviour
             fondo.gameObject.SetActive(false);
         }
 
-        gameObject.GetComponent<Transform>().position = new Vector3(-480, -110, -4);
+        gameObject.GetComponent<Transform>().position = new Vector3(-480, -130, -4);
 
         udp = new UdpClient(8059);
         thread = new Thread(new ThreadStart(ThreadMethod));
@@ -154,7 +155,7 @@ public class Jelly4Controller : MonoBehaviour
             {
                 nota.gameObject.SetActive(false);
                 marca.gameObject.SetActive(false);
-
+                particulas.gameObject.SetActive(true);
                 nota.parar();
                 fondo.ActivateSprite();
                 gameObject.GetComponent<Transform>().position = new Vector3(0, 120, 0);
