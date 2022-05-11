@@ -1,3 +1,0 @@
-C:/Users/lnava/Rafa/Library/PackageCache/com.unity.ide.visualstudio@2.0.14/Editor/COMIntegration/COMIntegration~/out/build/x64-Debug (predeterminado)/CMakeFiles/edit_cache.dir
-C:/Users/lnava/Rafa/Library/PackageCache/com.unity.ide.visualstudio@2.0.14/Editor/COMIntegration/COMIntegration~/out/build/x64-Debug (predeterminado)/CMakeFiles/COMIntegration.dir
-C:/Users/lnava/Rafa/Library/PackageCache/com.unity.ide.visualstudio@2.0.14/Editor/COMIntegration/COMIntegration~/out/build/x64-Debug (predeterminado)/CMakeFiles/rebuild_cache.dir
