@@ -10,11 +10,13 @@ public class TimeController : MonoBehaviour
 
     private float timeRest;
     private bool run;
+    public static bool finPartido;
 
     private void Awake()
     {
         timeRest = (min * 60) + seg;
         run = true;
+        finPartido = false;
     }
 
     void Update()
@@ -23,18 +25,16 @@ public class TimeController : MonoBehaviour
         {
             timeRest -= Time.deltaTime;
             
-            if(timeRest < 0)
+            if(timeRest <= 0)
             {
+                timeRest += Time.deltaTime;
                 run = false;
+                finPartido = true;
+
+                //gameObject.SetActive();
                 //Escena Final o TerminarEjecución y comprobar quien ha ganado
                 //Hacer static goal1 y goal2 para comprobar aquí eso.
 
-                //Ideas repararBugs:
-                //Adaptar canvas a todas las pantallas.
-                //Para que no se haga bug los player, poner 1 seg de delay, parar el tiempo si marcan, posicionar los players y jugar.
-                //O ver como poder bloquear todos los botones para que cuando se marque no se toque nada y empiezen normal.
-
-                //Bug del salto, pasa cuando se acerca a la portería y marca y se vuelve a acercar, colisiona el triger de a bajo con el triger de la portería.
             }
 
             int timeMin = Mathf.FloorToInt(timeRest / 60);

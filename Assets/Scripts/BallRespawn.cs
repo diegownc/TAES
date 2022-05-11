@@ -22,7 +22,13 @@ public class BallRespawn : MonoBehaviour
            GoalPlayer1.ballRespawn = false;
            GoalPlayer2.ballRespawn2 = false;
         }
+
+        if (TimeController.finPartido)
+        {
+            Destroy(gameObject);
+        }
     }
+
 
     /**public void PlayerGoal()
     {

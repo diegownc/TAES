@@ -124,10 +124,6 @@ public class Player1Controller : MonoBehaviour
             shot_1 = false;
         }
 
-        /**if(rb2d.velocity.y < 0.1f && rb2d.velocity.y > -0.1f){
-            CheckGround.isGrounded1 = true;
-        }**/
-
         if (betterJump)
         {
             if (rb2d.velocity.y < 0)
@@ -146,6 +142,11 @@ public class Player1Controller : MonoBehaviour
             rb2d.velocity = new Vector2(0, 0);
             GoalPlayer1.player1Respawn = false;
             GoalPlayer2.player1Respawn2 = false;
+        }
+
+        if (TimeController.finPartido)
+        {
+            Destroy(gameObject);
         }
     }
 }

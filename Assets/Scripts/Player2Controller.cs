@@ -144,5 +144,10 @@ public class Player2Controller : MonoBehaviour
             GoalPlayer1.player2Respawn = false;
             GoalPlayer2.player2Respawn2 = false;
         }
+
+        if (TimeController.finPartido)
+        {
+            Destroy(gameObject);
+        }
     }
 }

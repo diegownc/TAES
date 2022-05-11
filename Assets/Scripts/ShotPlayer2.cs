@@ -45,12 +45,12 @@ public class ShotPlayer2 : MonoBehaviour
             if (Player2Controller.flipX_2)
             {
                 //IZ
-                collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-120f, collision.gameObject.GetComponent<Rigidbody2D>().velocity.y+10);
+                collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(-170f, collision.gameObject.GetComponent<Rigidbody2D>().velocity.y+20);
             }
             else if (!Player2Controller.flipX_2)
             {
                 //DR
-                collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(120f, collision.gameObject.GetComponent<Rigidbody2D>().velocity.y+10);
+                collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(170f, collision.gameObject.GetComponent<Rigidbody2D>().velocity.y+20);
             }
         }
     }

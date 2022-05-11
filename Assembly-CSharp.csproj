@@ -56,16 +56,17 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BallRespawn.cs" />
     <Compile Include="Assets\Scripts\Player2Controller.cs" />
+    <Compile Include="Assets\Scripts\GoalPlayer2.cs" />
     <Compile Include="Assets\Scripts\CheckGround.cs" />
     <Compile Include="Assets\Scripts\Player1Controller.cs" />
+    <Compile Include="Assets\Scripts\GoalPlayer1.cs" />
     <Compile Include="Assets\Scripts\ShotPlayer1.cs" />
     <Compile Include="Assets\Scripts\CheckGround2.cs" />
     <Compile Include="Assets\Scripts\ShotPlayer2.cs" />
-    <Compile Include="Assets\Scripts\GoalPlayer1.cs" />
-    <Compile Include="Assets\Scripts\GoalPlayer2.cs" />
-    <Compile Include="Assets\Scripts\BallRespawn.cs" />
     <Compile Include="Assets\Scripts\TimeController.cs" />
+    <Compile Include="Assets\Scripts\FondoFinal.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
