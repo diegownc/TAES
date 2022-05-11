@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\ShotPlayer2.cs" />
     <Compile Include="Assets\Scripts\GoalPlayer1.cs" />
     <Compile Include="Assets\Scripts\GoalPlayer2.cs" />
+    <Compile Include="Assets\Scripts\BallRespawn.cs" />
+    <Compile Include="Assets\Scripts\TimeController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

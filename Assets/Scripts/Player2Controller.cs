@@ -115,5 +115,13 @@ public class Player2Controller : MonoBehaviour
                 rb2d2.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier2) * Time.deltaTime;
             }
         }
+
+        if (GoalPlayer1.player2Respawn || GoalPlayer2.player2Respawn2)
+        {
+            gameObject.transform.position = new Vector2(58, -33);
+            rb2d2.velocity = new Vector2(0, 0);
+            GoalPlayer1.player2Respawn = false;
+            GoalPlayer2.player2Respawn2 = false;
+        }
     }
 }

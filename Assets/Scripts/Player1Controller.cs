@@ -21,7 +21,7 @@ public class Player1Controller : MonoBehaviour
 
     public static bool flipX_1;
     public static bool shot_1;
-    private float offsetXder1 = -3.8f;
+    //private float offsetXder1 = -3.8f;
 
     void Start()
     {
@@ -117,6 +117,14 @@ public class Player1Controller : MonoBehaviour
             {
                 rb2d.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier) * Time.deltaTime;
             }
+        }
+
+        if (GoalPlayer1.player1Respawn || GoalPlayer2.player1Respawn2)
+        {
+            gameObject.transform.position = new Vector2(-58, -33);
+            rb2d.velocity = new Vector2(0, 0);
+            GoalPlayer1.player1Respawn = false;
+            GoalPlayer2.player1Respawn2 = false;
         }
     }
 }
