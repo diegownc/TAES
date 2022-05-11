@@ -7,7 +7,7 @@ public class CheckRight : MonoBehaviour
     public static bool isRight;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!collision.isTrigger && !collision.CompareTag("Enemigo"))
+        if(!collision.isTrigger)
             isRight = true;
     }
 

@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FruitManager : MonoBehaviour
 {
-    private bool unaVez = true;
     public void Update()
     {
         AllFruitCollected();
@@ -12,10 +12,10 @@ public class FruitManager : MonoBehaviour
 
     public void AllFruitCollected()
     {
-        if (transform.childCount == 0 && unaVez)
+        if (transform.childCount == 0)
         {
-            unaVez = false;
-            GameObject.Find("Partida").GetComponent<Partida>().NivelSuperado();
+            Debug.Log("No quedan frutas, Victoria!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

@@ -7,8 +7,7 @@ public class CheckGround : MonoBehaviour
     public static bool isGround;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(!collision.isTrigger && !collision.CompareTag("Enemigo"))
-            isGround = true;
+        isGround = true;
     }
 
     private void OnTriggerExit2D(Collider2D other)

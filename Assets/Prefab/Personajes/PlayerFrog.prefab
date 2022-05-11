@@ -309,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5993052214232300728}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.78228, y: 0.077008724, z: 1.5756038}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5993052212693342366}
@@ -448,12 +448,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ad02651105e674ea8f2c1ff6fe74c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  telefono: 0
-  moverDerecha: 0
-  moverIzquierda: 0
-  saltar: 0
-  dobleSalto: 0
   horizontalInput: 0
+  verticalInput: 0
   velocidad: 1
   fuerzaSaltoSimple: 17
   elevacionDobleSalto: 3
@@ -461,4 +457,15 @@ MonoBehaviour:
   cayendo: 1
   saltando: 0
   dead: 0
-  segundoSaltoActivo: 0
+  muriendo: 0
+  reaparecer: 1
+  reapareciendo: 1
+  spawn: 1
+  segundoSalto: 0
+  dobleSalto: 0
+  frameSalto: 0
+  frameReaparecer: 0
+  tiempoCaer: 0.95
+  tiempoReaparecer: 0.4
+  tiempoDobleSalto: 0.002
+  dobleSaltoActivo: 0
