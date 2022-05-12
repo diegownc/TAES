@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Data;
+//Rafa usa Mono.Data.Sqlite;
 
 public class Player1Controller : MonoBehaviour
 {
@@ -25,6 +27,8 @@ public class Player1Controller : MonoBehaviour
     public static bool stopJump = false;
     //private float offsetXder1 = -3.8f;
 
+    //private string dbName = "URI=file:Taes.db";
+
     void Start()
     {
         spriterederer = GetComponent<SpriteRenderer>();
@@ -32,6 +36,21 @@ public class Player1Controller : MonoBehaviour
         posPlayer1 = GetComponent<Transform>();
         //player = GetComponent<BoxCollider2D>();
         gameObject.transform.position = new Vector2(-58, -33);
+
+        /**IDataReader reader;
+        using (var connection = new SqliteConnection(dbName))
+        {
+            connection.Open();
+            using (var command = connection.CreateCommand())
+            {
+                command.CommandText = "select nombre from usuarios where puerto=8075";
+                using (reader = command.ExecuteReader())
+                {
+                    Debug.Log(reader["nombre"].ToString());
+                }
+            }
+            connection.Close();
+        }**/
     }
 
     private void Update()
@@ -112,7 +131,7 @@ public class Player1Controller : MonoBehaviour
         }
 
         //Disparo
-        if (Input.GetKey("space"))
+        if (Input.GetKey("x"))
         {
             animator.SetBool("Shot", true);
             shot_1 = true;

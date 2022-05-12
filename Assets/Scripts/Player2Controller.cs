@@ -109,7 +109,7 @@ public class Player2Controller : MonoBehaviour
         }
 
         //Disparo
-        if (Input.GetKey("m"))
+        if (Input.GetKey("p"))
         {
             animator2.SetBool("Shot2", true);
             shot_2 = true;

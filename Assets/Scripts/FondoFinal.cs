@@ -15,7 +15,7 @@ public class FondoFinal : MonoBehaviour
     {
         if (TimeController.finPartido)
         {
-            spriteredererFondo.sortingOrder = -3;
+            spriteredererFondo.sortingOrder = 0;
         }
     }
 }

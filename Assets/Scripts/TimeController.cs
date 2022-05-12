@@ -8,9 +8,14 @@ public class TimeController : MonoBehaviour
     [SerializeField] int min, seg;
     [SerializeField] Text textTime;
 
+
     private float timeRest;
     private bool run;
     public static bool finPartido;
+
+    public static bool GanadorP1 = false;
+    public static bool GanadorP2 = false;
+    public static bool Empate = false;
 
     private void Awake()
     {
@@ -31,10 +36,21 @@ public class TimeController : MonoBehaviour
                 run = false;
                 finPartido = true;
 
-                //gameObject.SetActive();
-                //Escena Final o TerminarEjecución y comprobar quien ha ganado
-                //Hacer static goal1 y goal2 para comprobar aquí eso.
-
+                if(GoalPlayer1.score1 > GoalPlayer2.score2)
+                {
+                    //Gana Jugador1
+                    GanadorP1 = true;
+                }
+                else if (GoalPlayer1.score1 < GoalPlayer2.score2)
+                {
+                    //Gana Jugador2
+                    GanadorP2 = true;
+                }
+                else
+                {
+                    //Empate
+                    Empate = true;
+                }
             }
 
             int timeMin = Mathf.FloorToInt(timeRest / 60);

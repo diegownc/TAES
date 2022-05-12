@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BallRespawn.cs" />
+    <Compile Include="Assets\Scripts\FondoFinal.cs" />
     <Compile Include="Assets\Scripts\Player2Controller.cs" />
     <Compile Include="Assets\Scripts\GoalPlayer2.cs" />
     <Compile Include="Assets\Scripts\CheckGround.cs" />
@@ -66,7 +67,8 @@
     <Compile Include="Assets\Scripts\CheckGround2.cs" />
     <Compile Include="Assets\Scripts\ShotPlayer2.cs" />
     <Compile Include="Assets\Scripts\TimeController.cs" />
-    <Compile Include="Assets\Scripts\FondoFinal.cs" />
+    <Compile Include="Assets\Scripts\TextoJugadorGanador.cs" />
+    <Compile Include="Assets\Scripts\AjustesManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

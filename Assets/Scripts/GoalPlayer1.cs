@@ -7,7 +7,7 @@ public class GoalPlayer1 : MonoBehaviour
 {
 
     private static bool goal1;
-    public int score1;
+    public static int score1;
     public Text textScore1;
 
     public static bool player1Respawn;

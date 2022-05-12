@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GoalPlayer2 : MonoBehaviour
 {
     private static bool goal2;
-    public int score2;
+    public static int score2;
     public Text textScore2;
 
     public static bool player1Respawn2;
