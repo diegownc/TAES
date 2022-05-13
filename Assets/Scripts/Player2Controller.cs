@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
 
 public class Player2Controller : MonoBehaviour
 {
@@ -24,27 +28,43 @@ public class Player2Controller : MonoBehaviour
     public static bool shot_2;
     public static bool stopJump2;
 
+    Thread telefono;
+    static UdpClient udp;
+
+    public bool moverDerecha;
+    public bool moverIzquierda;
+    public bool saltarTelefono;
+    public bool chutarTelefono;
+
     void Start()
     {
         spriterederer2 = GetComponent<SpriteRenderer>();
         rb2d2 = GetComponent<Rigidbody2D>();
         posPlayer2 = GetComponent<Transform>();
         gameObject.transform.position = new Vector2(58, -33);
+
+        moverDerecha = false;
+        moverIzquierda = false;
+        saltarTelefono = false;
+        chutarTelefono = false;
+        udp = new UdpClient(8052);
+        telefono = new Thread(new ThreadStart(ThreadMethod));
+        telefono.Start();
     }
 
     private void Update()
     {
         //DOBLE SALTO
-        if (Input.GetKey("up"))
+        if (Input.GetKey("up") || saltarTelefono)
         {
+            
             if (CheckGround2.isGrounded2)
             {
                 rb2d2.velocity = new Vector2(rb2d2.velocity.x, jumpSpeed2);
                 canJump2_2 = true;
-            }
-            else
+            }else
             {
-                if (Input.GetKeyDown("up"))
+                if (Input.GetKeyDown("up") || saltarTelefono)
                 {
                     if (canJump2_2)
                     {
@@ -88,14 +108,14 @@ public class Player2Controller : MonoBehaviour
     void FixedUpdate()
     {
         //Movimiento
-        if (Input.GetKey("left"))
+        if (Input.GetKey("left") || moverIzquierda)
         {
             rb2d2.velocity = new Vector2(-runSpeed2, rb2d2.velocity.y);
             spriterederer2.flipX = true;
             flipX_2 = true;
             animator2.SetBool("Run2", true);
         }
-        else if (Input.GetKey("right"))
+        else if (Input.GetKey("right") || moverDerecha)
         {
             rb2d2.velocity = new Vector2(runSpeed2, rb2d2.velocity.y);
             spriterederer2.flipX = false;
@@ -109,7 +129,7 @@ public class Player2Controller : MonoBehaviour
         }
 
         //Disparo
-        if (Input.GetKey("p"))
+        if (Input.GetKey("p") || chutarTelefono)
         {
             animator2.SetBool("Shot2", true);
             shot_2 = true;
@@ -148,6 +168,56 @@ public class Player2Controller : MonoBehaviour
         if (TimeController.finPartido)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void ThreadMethod()
+    {
+        //Obtengo la dirección IP de este pc
+        string localIP = string.Empty;
+        using (Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, 0))
+        {
+            socket.Connect("8.8.8.8", 65530);
+            IPEndPoint endPoint = socket.LocalEndPoint as IPEndPoint;
+            localIP = endPoint.Address.ToString();
+        }
+
+        Debug.Log(localIP);
+        Debug.Log("VOY A EMPEZAR A RECIBIR MENSAJES");
+        while (true)
+        {
+            IPEndPoint RemoteIpEndPoint = new IPEndPoint(IPAddress.Parse(localIP), 0);
+            byte[] receiveBytes = udp.Receive(ref RemoteIpEndPoint);
+            string cadena = Encoding.UTF8.GetString(receiveBytes);
+
+            if (cadena.Contains("Right"))
+            {
+                moverDerecha = true;
+                if (cadena.Contains("F"))
+                    moverDerecha = false;
+            }
+
+            if (cadena.Contains("Left"))
+            {
+                moverIzquierda = true;
+                if (cadena.Contains("F"))
+                    moverIzquierda = false;
+            }
+
+            if (cadena.Contains("Jump"))
+            {
+                saltarTelefono= true;
+                if (cadena.Contains("F"))
+                    saltarTelefono = false;
+            }
+
+            if (cadena.Contains("Shot"))
+            {
+                chutarTelefono = true;
+
+                if (cadena.Contains("F"))
+                    chutarTelefono = false;
+            }
         }
     }
 }
