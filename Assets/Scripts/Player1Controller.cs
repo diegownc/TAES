@@ -131,7 +131,7 @@ public class Player1Controller : MonoBehaviour
         }
 
         //Disparo
-        if (Input.GetKey("x"))
+        if (Input.GetKey("space"))
         {
             animator.SetBool("Shot", true);
             shot_1 = true;
