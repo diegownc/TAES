@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class BallRespawn : MonoBehaviour
 {
     Rigidbody2D rbBall;
+    public AudioSource AudioChute;
 
     void Start()
     {
@@ -29,9 +30,8 @@ public class BallRespawn : MonoBehaviour
         }
     }
 
-
-    /**public void PlayerGoal()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }**/
+        AudioChute.Play();
+    }
 }

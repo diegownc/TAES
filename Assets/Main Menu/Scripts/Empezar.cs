@@ -25,7 +25,7 @@ public class Empezar : MonoBehaviour
         }
         else if (textElement.text == "Extreme Football")
         {
-            SceneManager.LoadScene("ExtremeFootball");
+            SceneManager.LoadScene("Extreme Football");
         }
         else if (textElement.text == "Rhythm Run")
         {
