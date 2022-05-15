@@ -11,16 +11,9 @@ public class CambiarEscena : MonoBehaviour
 {
     void Start()
     {
-        string localIP = string.Empty;
-        using (Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, 0))
-        {
-            socket.Connect("8.8.8.8", 65530);
-            IPEndPoint endPoint = socket.LocalEndPoint as IPEndPoint;
-            localIP = endPoint.Address.ToString();
-        }
-        Debug.Log(localIP);
+        
     }
-    void LoadScene(string sceneName)
+    public void LoadScene(string sceneName)
     {
         StartCoroutine(Delay_LoadScene(sceneName));
     }
@@ -29,5 +22,10 @@ public class CambiarEscena : MonoBehaviour
     {
         yield return new WaitForSeconds(.3f);
         SceneManager.LoadScene(sceneName);
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
     }
 }

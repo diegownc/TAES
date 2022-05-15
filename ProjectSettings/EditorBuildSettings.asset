@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Extreme Football/Scenes/Extreme Football.unity
     guid: 9b6e710052cd015499ec325d81a3c6de
+  - enabled: 1
+    path: Assets/Main Menu/Scenes/Confirmar.unity
+    guid: b07677dccd80395418229eeac5e8e62b
   m_configObjects: {}

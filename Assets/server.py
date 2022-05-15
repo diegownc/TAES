@@ -9,7 +9,7 @@ juego = "juegox"
 numMaxJugadores = 0
 
 try:
-    mi_conexion = sqlite3.connect(".\Taes.db")
+    mi_conexion = sqlite3.connect("..\Taes.db")
     cursor=mi_conexion.cursor()
 
     #Vacio la tabla usuarios ya que es una nueva partida...
