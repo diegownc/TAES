@@ -55,7 +55,7 @@ public class Jelly2Controller : MonoBehaviour
 
         gameObject.GetComponent<Transform>().position = new Vector3(-480, 80, 0);
 
-        udp = new UdpClient(8057);
+        udp = new UdpClient(8052);
         thread = new Thread(new ThreadStart(ThreadMethod));
         thread.Start();
         push = false;
@@ -64,12 +64,13 @@ public class Jelly2Controller : MonoBehaviour
 
     private void ThreadMethod()
     {
-        //Obtengo la dirección IP de este pc
         string ipPC = string.Empty;
-        IPHostEntry ipEntry = Dns.GetHostEntry(Dns.GetHostName());
-        IPAddress[] addr = ipEntry.AddressList;
-        //ipPC = addr[1].ToString();
-        ipPC = "192.168.1.106";
+        using (Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, 0))
+        {
+            socket.Connect("8.8.8.8", 65530);
+            IPEndPoint endPoint = socket.LocalEndPoint as IPEndPoint;
+            ipPC = endPoint.Address.ToString();
+        }
 
 
         Debug.Log(ipPC);

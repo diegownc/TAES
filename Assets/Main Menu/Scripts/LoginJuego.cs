@@ -1,24 +1,41 @@
+using UnityEngine;
+using UnityEngine.UI;
+using System.Threading;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using System.Threading;
-using System.Diagnostics;
-using System.Text;
-using Mono.Data.Sqlite;
 using System.Data;
+using Mono.Data.Sqlite;
 
-public class LoginJuego2 : MonoBehaviour
+public class LoginJuego : MonoBehaviour
 {
     Thread leerJugadores;
 
     private string dbName = "URI=file:Taes.db";
     private ArrayList listaJugadores;
+    public Text nombreDelJuego;
     private int NumMAXJugadores = 6;
     private string juegoSeleccionado = "juego2"; //la app m�vil espera "juego1" o "juego2" o "juego3" para saber que controles mostrar
 
     // Start is called before the first frame update
     void Start()
     {
+
+        if(nombreDelJuego.text == "Pixel Adventure")
+        {
+            juegoSeleccionado = "juego1";
+            NumMAXJugadores = 2;
+        }
+        else if(nombreDelJuego.text == "Extreme Football")
+        {
+            juegoSeleccionado = "juego3";
+            NumMAXJugadores = 2;
+        }
+        else if(nombreDelJuego.text == "Rhythm Run")
+        {
+            juegoSeleccionado = "juego2";
+            NumMAXJugadores = 6;
+        }
+
         listaJugadores = new ArrayList();
         CreateDB();
         leerJugadores = new Thread(new ThreadStart(leerUsuarios));
@@ -35,14 +52,12 @@ public class LoginJuego2 : MonoBehaviour
         using (var connection = new SqliteConnection(dbName))
         {
             connection.Open();
-
+            
             using (var command = connection.CreateCommand())
             {
                 command.CommandText = "CREATE TABLE IF NOT EXISTS usuarios (nombre VARCHAR(45), ip VARCHAR(45), puerto int)";
                 command.ExecuteNonQuery();
-                command.CommandText = "DELETE FROM juegoseleccionado";
-                command.ExecuteNonQuery();
-                /*
+                
                 command.CommandText = "CREATE TABLE IF NOT EXISTS juegoseleccionado (nombre VARCHAR(45), numJugadores int, empezar int)";
                 command.ExecuteNonQuery();
 
@@ -52,7 +67,7 @@ public class LoginJuego2 : MonoBehaviour
 
                 //Empezamos una nueva partida
                 command.CommandText = "INSERT INTO juegoseleccionado (nombre, numJugadores, empezar) values ('" + juegoSeleccionado + "', " + NumMAXJugadores + ", 0)";
-                command.ExecuteNonQuery();*/
+                command.ExecuteNonQuery();
             }
             connection.Close();
         }
@@ -71,26 +86,24 @@ public class LoginJuego2 : MonoBehaviour
             using (var command = connection.CreateCommand())
             {
                 //Me espero a que el servidor (server.py) este listo para atender a los usuarios
-                /*while (true)
+                while (true)
                 {
                     command.CommandText = "select * from juegoseleccionado";
                     using (reader = command.ExecuteReader())
                     {
                         if (reader["empezar"].ToString() == "1")
                         {
-                            UnityEngine.Debug.Log("Empezar� a leer los usuarios");
+                            UnityEngine.Debug.Log("Empezará a leer los usuarios");
 
                             reader.Close();
                             reader.Dispose();
-                            command.CommandText = "DELETE FROM juegoseleccionado";
-                            command.ExecuteNonQuery();
                             break;
                         }
                     }
 
                     //Me espero 5 segundos hasta hacer la pr�xima select
                     Thread.Sleep(5000);
-                }*/
+                }
 
                 while (true)
                 {

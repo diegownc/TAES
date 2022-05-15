@@ -19,7 +19,7 @@ public class Empezar : MonoBehaviour
         textElement.text = PlayerPrefs.GetString("nombreDelJuego");
         yield return new WaitForSeconds(.5f);
 
-        if (textElement.text == "Juego1")
+        if (textElement.text == "Pixel Adventure")
         {
             SceneManager.LoadScene("Level_1");
         }
