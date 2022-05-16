@@ -62,7 +62,7 @@ public class PlayerMove2 : MonoBehaviour
 
         if (telefono)
         {
-            udp = new UdpClient(8055);
+            udp = new UdpClient(8052);
             thread = new Thread(new ThreadStart(ThreadMethod));
             thread.Start();
         }
