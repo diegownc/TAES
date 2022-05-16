@@ -64,7 +64,7 @@ public class Player1Controller : MonoBehaviour
 
         if (Input.GetKey("w") || saltarTelefono)
         {
-            if (CheckGround.isGrounded1)
+            if (CheckGroundFut.isGrounded1)
             {
                 rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
                 canJump2 = true;
@@ -75,7 +75,7 @@ public class Player1Controller : MonoBehaviour
                 {
                     if (canJump2)
                     {
-                        if (!stopJump) //Este no hace nada, ver como arreglar o dejar así, al menos no peta.
+                        if (!stopJump) //Este no hace nada, ver como arreglar o dejar asï¿½, al menos no peta.
                         {
                             animator.SetBool("Jump", true);
                         }
@@ -89,12 +89,12 @@ public class Player1Controller : MonoBehaviour
 
         if (!stopJump)
         {
-            if (!CheckGround.isGrounded1)
+            if (!CheckGroundFut.isGrounded1)
             {
                 animator.SetBool("Jump", true);
                 animator.SetBool("Run", false);
             }
-            else if (CheckGround.isGrounded1)
+            else if (CheckGroundFut.isGrounded1)
             {
                 animator.SetBool("Jump", false);
             }
@@ -176,7 +176,7 @@ public class Player1Controller : MonoBehaviour
 
     private void ThreadMethod()
     {
-        //Obtengo la dirección IP de este pc
+        //Obtengo la direcciï¿½n IP de este pc
         string localIP = string.Empty;
         using (Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, 0))
         {

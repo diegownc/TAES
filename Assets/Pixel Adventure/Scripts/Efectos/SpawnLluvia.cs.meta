@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c34cad14463fc3b41b5b4ea83af66ad9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - LluviaFrutas: {fileID: 2077362427674767982, guid: 5be42ca9686659c46a2667a5e0185f26, type: 3}
+  - instancia: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
