@@ -9,10 +9,6 @@ using System.Net.Sockets;
 
 public class CambiarEscena : MonoBehaviour
 {
-    void Start()
-    {
-        
-    }
     public void LoadScene(string sceneName)
     {
         StartCoroutine(Delay_LoadScene(sceneName));
@@ -26,6 +22,11 @@ public class CambiarEscena : MonoBehaviour
 
     public void Salir()
     {
-        Application.Quit();
+        StartCoroutine(Delay_Salir());
     }
+    public IEnumerator Delay_Salir()
+    {
+        yield return new WaitForSeconds(.5f);
+        Application.Quit();
+    } 
 }

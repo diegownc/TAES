@@ -18,10 +18,9 @@ public class EjecutarServidor : MonoBehaviour
         proc1.UseShellExecute = true;
 
         proc1.WorkingDirectory = @"C:\Windows\System32";
-
         proc1.FileName = @"C:\Windows\System32\cmd.exe";
-        proc1.Verb = "runas";
-        proc1.Arguments = "/k cd " + $"{Application.dataPath} & python server.py";
+        proc1.WindowStyle = ProcessWindowStyle.Hidden;
+        proc1.Arguments = "/k title ServidorJuego & cd " + $"{Application.dataPath} & python server.py";
         Process.Start(proc1);
     }
 }

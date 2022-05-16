@@ -1626,6 +1626,7 @@ GameObject:
   - component: {fileID: 1207942141}
   - component: {fileID: 1207942143}
   - component: {fileID: 1207942140}
+  - component: {fileID: 1207942144}
   m_Layer: 5
   m_Name: 2d PARTY
   m_TagString: Untagged
@@ -1709,6 +1710,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1207942144}
+        m_TargetAssemblyTypeName: CerrarTerminal, Assembly-CSharp
+        m_MethodName: pou
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1207942141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1757,6 +1770,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9ee9cb6a7d7803479d9a1fa58d9a1b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1207942144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207942138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814f95ea148bae843b521555a44d500d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1276119979
