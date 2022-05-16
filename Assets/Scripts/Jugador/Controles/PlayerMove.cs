@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using UnityEngine;
@@ -11,17 +12,20 @@ public class PlayerMove : MonoBehaviour
 {
     //Posision inicial de personaje
     //public Vector2 Spawn = new Vector2(-1, 1);
-    
     //Sockets
     static UdpClient udp;
+    public static string IP = "192.168.1.128";
+    public bool telefono = true;
+    private float movimiento; 
     Thread thread;
+    //Movimientos
     private bool moverDerecha = false;
     private bool moverIzquierda = false;
     private bool saltar = false;
-    private bool movil = false;
-
+    private bool dobleSalto = false;
+    
     //Controles
-    public float horizontalInput;
+    private float horizontalInput;
 
     //Atributos movimiento
     public float velocidad = 1f;
@@ -39,22 +43,23 @@ public class PlayerMove : MonoBehaviour
     private bool reaparecer = true;
     private bool reapareciendo = true;
     private bool spawn = true;
+    //Estado nivel
+    private bool pasarNivel = false;
     //Jugabilidad
     private bool segundoSaltoDisponible = false;
-    public bool segundoSaltoActivo = false;
 
     //Atributos de metodos
     private double frameSalto = 0;
     private double frameReaparecer = 0;
     private float tiempoCaer = 0.95f;
     private float tiempoReaparecer = 0.4f;
-    private float tiempoDobleSalto = 0.002f;
+    private bool restarVida = true;
 
     private void Start()
     {
         frameReaparecer = transform.position.y;
 
-        if (movil)
+        if (telefono)
         {
             udp = new UdpClient(8055);
             thread = new Thread(new ThreadStart(ThreadMethod));
@@ -68,18 +73,23 @@ public class PlayerMove : MonoBehaviour
         
         if (reapareciendo)
         {
+            ResetCheck();
             AnimacionEnAire();
             tiempoCaer = tiempoCaer - Time.deltaTime;
             Reaparecer();
         }
         else if (dead)
         {
+            ResetCheck();
             Morir();
         }
         else if (muriendo)
         {
-            tiempoReaparecer = tiempoReaparecer - Time.deltaTime;
-            PlayerSpawn();
+            if (!pasarNivel)
+            {
+                tiempoReaparecer = tiempoReaparecer - Time.deltaTime;
+                PlayerSpawn();
+            }
         }
         else
         {
@@ -103,57 +113,53 @@ public class PlayerMove : MonoBehaviour
 
     private void ActualizacionDeEstados()
     {
-        //si cae que cambie 
-        //salto simple
+        //Reaparicion
         if (reaparecer && frameReaparecer > transform.position.y + 2)
         {
             reaparecer = false;
             cayendo = true;
         }
 
-        if (CheckGround.isGround)
+        if (!dobleSalto)
         {
-            suelo = true;
-            cayendo = false;
-            reaparecer = false;
-            segundoSaltoActivo = false;
-            //saltando = false;
-        }
-        else
-        {
-            //Si se choca con algun techo o plataforma
-            if (CheckUp.isUp)
+            if (gameObject.GetComponent<Rigidbody2D>().velocity.y > 0.2)
+            {
+                saltando = true;
+                cayendo = false;
+                suelo = false;
+            }
+            else if (gameObject.GetComponent<Rigidbody2D>().velocity.y < -0.2)
             {
                 saltando = false;
                 cayendo = true;
-            }
-            else
-            {
                 suelo = false;
-                if (!saltando)
-                    cayendo = true;
+            }
+            if(CheckGround.isGround){
+                dobleSalto = false;
+                saltando = false;
+                cayendo = false;
+                suelo = true;
+            }
+        }
+        else
+        {
+            if(CheckGround.isGround){
+                dobleSalto = false;
+                saltando = false;
+                cayendo = false;
+                suelo = true;
             }
         }
     }
 
     private void ComportamiendoEnAire()
     {
-        if (!suelo && !segundoSaltoActivo)
+        if (!suelo && !dobleSalto)
         {
-            //un poco chapuza, corregir en cuanto se encuentre otra forma mas simple
+            //efecto visual chido cuando salta
             if (saltando && gameObject.transform.position.y > 0.5 + frameSalto)
             {
                 saltando = false;
-                cayendo = true;
-            }
-        }
-        else if (!suelo && segundoSaltoActivo)
-        {
-            
-            //un poco chapuza, corregir en cuanto se encuentre otra forma mas simple
-            if (segundoSaltoActivo && gameObject.transform.position.y  > 0.4 + frameSalto ) //0.3
-            {
-                segundoSaltoActivo = false;
                 cayendo = true;
             }
         }
@@ -165,8 +171,20 @@ public class PlayerMove : MonoBehaviour
         {
             gameObject.GetComponent<Animator>().SetBool("Reaparecer", true);
         } else  gameObject.GetComponent<Animator>().SetBool("Reaparecer", false);
-        
-        if (cayendo)
+
+        if (dobleSalto)
+        {
+            gameObject.GetComponent<Animator>().SetBool("Fall", false);
+            gameObject.GetComponent<Animator>().SetBool("Jump", false);
+            gameObject.GetComponent<Animator>().SetBool("DobleSalto", true);
+        }
+        else if (suelo)
+        {
+            gameObject.GetComponent<Animator>().SetBool("Fall", false);
+            gameObject.GetComponent<Animator>().SetBool("Jump", false);
+            gameObject.GetComponent<Animator>().SetBool("DobleSalto", false);
+        }
+        else if (cayendo)
         {
             gameObject.GetComponent<Animator>().SetBool("Fall", true);
             gameObject.GetComponent<Animator>().SetBool("Jump", false);
@@ -176,8 +194,8 @@ public class PlayerMove : MonoBehaviour
             gameObject.GetComponent<Animator>().SetBool("Fall", false);
             gameObject.GetComponent<Animator>().SetBool("Jump", true);
         }
-        else
-        {
+        else {
+            //Por si buguea
             gameObject.GetComponent<Animator>().SetBool("Fall", false);
             gameObject.GetComponent<Animator>().SetBool("Jump", false);
             gameObject.GetComponent<Animator>().SetBool("DobleSalto", false);
@@ -186,7 +204,7 @@ public class PlayerMove : MonoBehaviour
 
     private void MovimientoHorizontal()
     {
-        if (!movil)
+        if (!telefono)
         {
             //Recogiendo datos y potencia del teclado (solo Horinzontal, vertial no hace falta, el salto es fijo)
             horizontalInput = Input.GetAxis("Horizontal");
@@ -195,11 +213,26 @@ public class PlayerMove : MonoBehaviour
         {
             if (moverDerecha)
             {
-                horizontalInput = 0.5f;
+                if(movimiento<=1) 
+                    movimiento += Time.deltaTime *5;
+                if (movimiento > 1)
+                    movimiento = 1;
+                
+                horizontalInput = movimiento;
             }
             else if (moverIzquierda)
             {
-                horizontalInput = -0.5f;
+                if(movimiento >= -1) 
+                    movimiento -= Time.deltaTime*5;
+                if (movimiento < -1)
+                    movimiento = -1;
+                
+                horizontalInput = movimiento;
+            }
+            else
+            {
+                movimiento = 0;
+                horizontalInput = movimiento;
             }
         }
 
@@ -219,38 +252,45 @@ public class PlayerMove : MonoBehaviour
 
             gameObject.GetComponent<Animator>().SetBool("Run", true);
         }
-        else gameObject.GetComponent<Animator>().SetBool("Run", false);
+        else
+        {
+            gameObject.GetComponent<Animator>().SetBool("Run", false);
+            
+            if(suelo && !saltando && !cayendo && !reapareciendo && !dobleSalto)
+                gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, gameObject.GetComponent<Rigidbody2D>().velocity.y);
+        }
     }
 
     private void Salto()
     {
-        if (movil)
+        if (telefono)
         {
             if (saltar)
             {
-                //verticalInput = Input.GetAxis("Vertical");
+                saltar = false;
                 if (suelo)
-                {
-                    saltando = true;
-                    frameSalto = gameObject.transform.position.y;
-                    gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, fuerzaSaltoSimple));
-                    segundoSaltoDisponible = true;
-                }
-                else if ( segundoSaltoDisponible)
-                {
-                    segundoSaltoDisponible = false;
-                    saltando = false;
-                    segundoSaltoActivo = true;
-                    GameObject.Find("SpawnJumpEffect").GetComponent<SpawnJumpEffect>().Spawn(transform.position);
-                    gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, elevacionDobleSalto);
-                    frameSalto = gameObject.transform.position.y;
-                }
+                    {
+                        saltando = true;
+                        frameSalto = gameObject.transform.position.y;
+                        gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, fuerzaSaltoSimple));
+                        segundoSaltoDisponible = true;
+                    }
+                    else if (segundoSaltoDisponible)
+                    {
+                        gameObject.GetComponent<Animator>().SetBool("DobleSalto", true);
+                        dobleSalto = true;
+                        saltando = false;
+                        cayendo = false;
+                        segundoSaltoDisponible = false;
+                        GameObject.Find("SpawnJumpEffect").GetComponent<SpawnJumpEffect>().Spawn(transform.position);
+                        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, elevacionDobleSalto);
+                        frameSalto = gameObject.transform.position.y;
+                    }
             }
         }
         else
         {
             if (Input.GetKeyDown("w")){
-                //verticalInput = Input.GetAxis("Vertical");
                 if (suelo)
                 {
                     saltando = true;
@@ -260,9 +300,11 @@ public class PlayerMove : MonoBehaviour
                 }
                 else if (segundoSaltoDisponible)
                 {
-                    segundoSaltoDisponible = false;
+                    gameObject.GetComponent<Animator>().SetBool("DobleSalto", true);
+                    dobleSalto = true;
                     saltando = false;
-                    segundoSaltoActivo = true;
+                    cayendo = false;
+                    segundoSaltoDisponible = false;
                     GameObject.Find("SpawnJumpEffect").GetComponent<SpawnJumpEffect>().Spawn(transform.position);
                     gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, elevacionDobleSalto);
                     frameSalto = gameObject.transform.position.y;
@@ -271,20 +313,50 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    private void Morir()
+    public void Morir()
     {
+        //Para que se reste solo una vida
+        if (!muriendo)
+        {
+            PlayerPrefs.SetInt("Vidas", PlayerPrefs.GetInt("Vidas") - 1);
+        }
+
         dead = false;
         muriendo = true;
         gameObject.GetComponent<Animator>().SetBool("Reaparecer", false);
         gameObject.GetComponent<Animator>().SetBool("Run", false);
         gameObject.GetComponent<Animator>().SetBool("Fall", false);
         gameObject.GetComponent<Animator>().SetBool("Jump", false);
+        gameObject.GetComponent<Animator>().SetBool("DobleSalto", false);
         gameObject.GetComponent<Animator>().SetBool("Morrir", true);
-        PlayerPrefs.SetInt("Vidas", PlayerPrefs.GetInt("Vidas") - 1);
         ResetCheck();
-        if(movil)
+        if(telefono)
             udp.Close();
         Destroy(gameObject, 0.5f);
+        Quieto();
+    }
+
+    private void Quieto()
+    {
+        gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+    }
+
+    public void PasarNivel()
+    {
+        pasarNivel = true;
+        dead = false;
+        muriendo = true;
+        gameObject.GetComponent<Animator>().SetBool("Reaparecer", false);
+        gameObject.GetComponent<Animator>().SetBool("Run", false);
+        gameObject.GetComponent<Animator>().SetBool("Fall", false);
+        gameObject.GetComponent<Animator>().SetBool("Jump", false);
+        gameObject.GetComponent<Animator>().SetBool("DobleSalto", false);
+        gameObject.GetComponent<Animator>().SetBool("Morrir", true);
+        ResetCheck();
+        if(telefono)
+            udp.Close();
+        Destroy(gameObject, 0.5f);
+        Quieto();
     }
     
     private void PlayerSpawn()
@@ -334,7 +406,8 @@ public class PlayerMove : MonoBehaviour
         string ipPC = string.Empty;
         IPHostEntry ipEntry = Dns.GetHostEntry(Dns.GetHostName());
         IPAddress[] addr = ipEntry.AddressList;
-        ipPC = addr[1].ToString();
+        //ipPC = addr[1].ToString();
+        ipPC = IP;
 
 
         Debug.Log(ipPC);

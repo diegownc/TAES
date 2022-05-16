@@ -12,7 +12,7 @@ public class SpawnPlayer : MonoBehaviour
     {
         Instantiate(playerFrefap,transform.position,new Quaternion());
     }
-    
+
     public void Spawn()
     {
         if (PlayerPrefs.GetInt("Vidas") > 0)

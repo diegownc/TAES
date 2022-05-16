@@ -7,9 +7,12 @@ public class Trampa : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.transform.CompareTag("Player"))
+        if (collision.transform.CompareTag("Player1"))
         {
-            collision.gameObject.GetComponent<PlayerMove>().dead = true;
+            collision.gameObject.GetComponent<PlayerMove>().Morir();
+        } else if (collision.transform.CompareTag("Player2"))
+        {
+            collision.gameObject.GetComponent<PlayerMove2>().Morir();
         }
     }
 }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Suelo
+  - Enemigo
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
