@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157c815f227838f46abeb757997c3519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  telefono: 0
+  telefono: 1
   velocidad: 1
   fuerzaSaltoSimple: 17
   elevacionDobleSalto: 3

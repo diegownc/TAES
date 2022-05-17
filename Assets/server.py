@@ -130,6 +130,7 @@ try:
 
                         #Enviamos al usuario el juego seleccionado y el puerto que tiene asignado..
                         cadena = juego + ":" + str(puertoUsuario)
+                        print(cadena)
                         conn.sendall(cadena.encode("utf-8"))
                         print("Ok")
                         break

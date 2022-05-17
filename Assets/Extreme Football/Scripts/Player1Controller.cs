@@ -217,7 +217,6 @@ public class Player1Controller : MonoBehaviour
             if (cadena.Contains("Shot"))
             {
                 chutarTelefono = true;
-
                 if (cadena.Contains("F"))
                     chutarTelefono = false;
             }

@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
@@ -14,7 +15,6 @@ public class PlayerMove : MonoBehaviour
     //public Vector2 Spawn = new Vector2(-1, 1);
     //Sockets
     static UdpClient udp;
-    public static string IP = "192.168.1.128";
     public bool telefono = true;
     private float movimiento; 
     Thread thread;
@@ -315,6 +315,7 @@ public class PlayerMove : MonoBehaviour
 
     public void Morir()
     {
+        
         //Para que se reste solo una vida
         if (!muriendo)
         {
@@ -404,11 +405,12 @@ public class PlayerMove : MonoBehaviour
     {
         //Obtengo la dirección IP de este pc
         string ipPC = string.Empty;
-        IPHostEntry ipEntry = Dns.GetHostEntry(Dns.GetHostName());
-        IPAddress[] addr = ipEntry.AddressList;
-        //ipPC = addr[1].ToString();
-        ipPC = IP;
-
+        using (Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, 0))
+        {
+            socket.Connect("8.8.8.8", 65530);
+            IPEndPoint endPoint = socket.LocalEndPoint as IPEndPoint;
+            ipPC = endPoint.Address.ToString();
+        }
 
         Debug.Log(ipPC);
         Debug.Log("VOY A EMPEZAR A RECIBIR MENSAJES");

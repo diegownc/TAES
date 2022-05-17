@@ -14,7 +14,6 @@ public class PlayerMove2 : MonoBehaviour
 
     private bool dosJugadores = true;
     //Sockets
-    private static string IP = "192.168.1.128";
     static UdpClient udp;
     public bool telefono = false;
     Thread thread;
@@ -219,14 +218,22 @@ public class PlayerMove2 : MonoBehaviour
         }
         else
         {
-            if (moverDerecha)
+             if (moverDerecha)
             {
-                movimiento += Time.deltaTime;
+                if(movimiento<=1) 
+                    movimiento += Time.deltaTime *5;
+                if (movimiento > 1)
+                    movimiento = 1;
+                
                 horizontalInput = movimiento;
             }
             else if (moverIzquierda)
             {
-                movimiento -= Time.deltaTime;
+                if(movimiento >= -1) 
+                    movimiento -= Time.deltaTime*5;
+                if (movimiento < -1)
+                    movimiento = -1;
+                
                 horizontalInput = movimiento;
             }
             else
@@ -404,9 +411,12 @@ public class PlayerMove2 : MonoBehaviour
     {
         //Obtengo la dirección IP de este pc
         string ipPC = string.Empty;
-        IPHostEntry ipEntry = Dns.GetHostEntry(Dns.GetHostName());
-        IPAddress[] addr = ipEntry.AddressList;
-        ipPC = addr[1].ToString();
+        using (Socket socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, 0))
+        {
+            socket.Connect("8.8.8.8", 65530);
+            IPEndPoint endPoint = socket.LocalEndPoint as IPEndPoint;
+            ipPC = endPoint.Address.ToString();
+        }
 
 
         Debug.Log(ipPC);

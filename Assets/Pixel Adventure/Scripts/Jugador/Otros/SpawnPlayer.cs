@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SpawnPlayer : MonoBehaviour
 {
@@ -15,10 +16,11 @@ public class SpawnPlayer : MonoBehaviour
 
     public void Spawn()
     {
-        if (PlayerPrefs.GetInt("Vidas") > 0)
+        if (PlayerPrefs.GetInt("Vidas") >= 0)
         {
             Instantiate(playerFrefap,transform.position,new Quaternion());
-
+        } else {
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

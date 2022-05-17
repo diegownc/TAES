@@ -658,7 +658,7 @@ MonoBehaviour:
   runSpeed: 55
   jumpSpeed: 70
   jumpSpeed2: 50
-  betterJump: 1
+  betterJump: 0
   fallMultiplier: 0.5
   lowJumpMultiplier: 10
   spriterederer: {fileID: 466489624}
@@ -1679,7 +1679,7 @@ MonoBehaviour:
   runSpeed2: 55
   jumpSpeed2: 70
   jumpSpeed2_2: 50
-  betterJump2: 1
+  betterJump2: 0
   fallMultiplier2: 0.5
   lowJumpMultiplier2: 10
   spriterederer2: {fileID: 1021722407}
