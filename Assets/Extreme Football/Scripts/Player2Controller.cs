@@ -36,6 +36,11 @@ public class Player2Controller : MonoBehaviour
     public bool saltarTelefono;
     public bool chutarTelefono;
 
+    private void OnDestroy()
+    {
+        udp.Close();
+    }
+
     void Start()
     {
         spriterederer2 = GetComponent<SpriteRenderer>();

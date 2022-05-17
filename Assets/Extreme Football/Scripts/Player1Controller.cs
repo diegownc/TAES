@@ -58,6 +58,10 @@ public class Player1Controller : MonoBehaviour
         telefono.Start();
     }
 
+    private void OnDestroy() {
+        udp.Close();
+    }
+
     private void Update()
     {
         //DOBLE SALTO
